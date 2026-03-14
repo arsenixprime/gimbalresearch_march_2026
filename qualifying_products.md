@@ -7,16 +7,15 @@ Criteria: optical zoom >= 10x, weight < 1000g, price < $10,000, daylight/visible
 | Product | Company | Country | Optical Zoom | Weight (g) | Video Resolution | Price (USD) | Link |
 |---------|---------|---------|-------------|-----------|-----------------|-------------|------|
 | Foxtech Seeker-40 Pro TIR | Foxtech | China | 40x | -- | -- | $7,899 | -- |
-| Yangda Sky Eye-40HZ | Yangda | China | 40x | -- | 1920x1080@30fps | $2,000 | -- |
+| Yangda Sky Eye-40HZ | Yangda | China | 40x | 910 | 1920x1080@30fps | $2,000 | -- |
 | Foxtech FH336 V2 | Foxtech | China | 36x | -- | 1920x1080 | $4,599 | -- |
 | DJI Zenmuse H30 | DJI | China | 34x | 920 | 3840x2160@30fps | $3,850 | -- |
 | DJI Zenmuse H30T | DJI | China | 34x | 920 | 3840x2160@30fps | $7,500 | -- |
 | SIYI ZR30 | SIYI Technology | China | 30x | 668 | 3840x2160@30fps | $1,177 | -- |
 | Foxtech SEEKER-30 TR | Foxtech | China | 30x | -- | 1920x1080 | $3,899 | -- |
 | Foxtech SYK-30 AI EO/IR | Foxtech | China | 30x | 770 | -- | $5,299 | -- |
-| Yangda Sky Eye-U30 | Yangda | China | 30x | 690 | 1920x1080@60fps | $1,485 | -- |
-| Yangda Sky Eye-30HZ-S | Yangda | China | 30x | -- | 1920x1080@30fps | $1,750 | -- |
-| Yangda Storm Eye-30IE-HT | Yangda | China | 30x | -- | 1920x1080 | $4,000 | -- |
+| Yangda Sky Eye-U30 | Yangda | China | 30x | 748 | 1920x1080@60fps | $1,485 | -- |
+| Yangda Sky Eye-30HZ-S | Yangda | China | 30x | 784 | 1920x1080@30fps | $1,750 | -- |
 | Topotek SIP30S90 | Topotek | China | 30x | -- | 1920x1080 | $1,500 | -- |
 | Foxtech EH26 | Foxtech | China | 26x | 600 | 1920x1080 | $1,199 | -- |
 | Foxtech FH325 4K | Foxtech | China | 25x | -- | 3840x2160@25fps | $3,749 | -- |
@@ -35,4 +34,4 @@ Criteria: optical zoom >= 10x, weight < 1000g, price < $10,000, daylight/visible
 | Zingto Q12X | Zingto (INYYO) | China | 10x | 460 | 3840x2160 | $1,500 | -- |
 | CUAV Q10F | CUAV | China | 10x | 413 | 1920x1080 | $1,020 | -- |
 
-**Total qualifying products: 28**
+**Total qualifying products: 27**

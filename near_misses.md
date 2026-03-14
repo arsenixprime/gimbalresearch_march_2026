@@ -8,6 +8,7 @@ Products that are close to meeting criteria (optical zoom >= 10x, weight < 1000g
 |---------|---------|---------|-------------|-----------|-----------------|-------------|------|--------|
 | SIYI A8 Mini | SIYI Technology | China | 0x (6x digital only) | 95 | 3840x2160@25fps | $269 | -- | Only digital zoom (6x), no optical zoom |
 | Gremsy Orus L | Gremsy | Vietnam | 25x | -- | -- | -- | -- | Weight and price unknown, cannot confirm criteria |
+| Yangda Storm Eye-30IE-HT | Yangda | China | 30x | 1,470 | 1920x1080 | $4,000 | -- | Weight 1470g exceeds 1000g limit |
 | Zingto Q350 | Zingto (INYYO) | China | 30x | 1,710 | 1920x1080 | -- | -- | Weight 1710g exceeds 1000g limit |
 | Ukrspecsystems USG-261 | Ukrspecsystems | Ukraine | 10x | 400 | -- | -- | -- | Price unknown, military product likely >$10k |
 | Ukrspecsystems USG-231 | Ukrspecsystems | Ukraine | 30x | -- | 1920x1080 | -- | -- | Price unknown, military product likely >$10k |
@@ -21,4 +22,4 @@ Products that are close to meeting criteria (optical zoom >= 10x, weight < 1000g
 | Edge Autonomy E180 | Edge Autonomy | United States | 15x | -- | 3840x2160 | -- | -- | Price unknown, military product likely >$10k |
 | Controp (various models) | Controp | Israel | -- | -- | -- | -- | -- | Military-grade, typically >$10k, specs not publicly available |
 
-**Total near-miss products: 14**
+**Total near-miss products: 15**

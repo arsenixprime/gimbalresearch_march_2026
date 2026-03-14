@@ -1,5 +1,24 @@
 # Claude Code Prompt: Optical Zoom Drone Gimbal Research
 
+## Prerequisites
+
+Before running this prompt, ensure WebSearch and WebFetch are pre-approved for **all domains** in your project settings. Create or update `.claude/settings.local.json`:
+
+```json
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch"
+    ]
+  }
+}
+```
+
+**Do NOT use domain-specific rules** like `WebFetch(domain:example.com)` — the research discovers new manufacturer websites dynamically, so blanket access is required.
+
+This is **required** — without it, subagents will be denied web access and the research will fail silently.
+
 ## Prompt
 
 ```
@@ -48,7 +67,7 @@ Group them by intent: general discovery, spec-focused, brand-targeted, applicati
 
 For EACH search term group, launch a subagent with this instruction:
 
-"Search the web using these terms: [terms]. Return ONLY a JSON array of objects with {name, url, notes} for every company you find that manufactures drone-mountable camera gimbals with optical zoom capability. Exclude: retailers/resellers, review-only sites, thermal-only manufacturers, handheld gimbal companies (like Zhiyun for handheld stabilizers), companies that only make drones but not payloads. Include OEMs even if they primarily sell B2B."
+"Search the web using these terms: [terms]. For each term, use the WebSearch tool to search, then review the results. Return ONLY a JSON array of objects with {name, url, notes} for every company you find that manufactures drone-mountable camera gimbals with optical zoom capability. Exclude: retailers/resellers, review-only sites, thermal-only manufacturers, handheld gimbal companies (like Zhiyun for handheld stabilizers), companies that only make drones but not payloads. Include OEMs even if they primarily sell B2B."
 
 Collect all results into `companies_raw.json`. Deduplicate by company name (fuzzy match — e.g., "SIYI" and "SIYI Technology" are the same). Save to `companies_deduped.json`.
 
@@ -56,7 +75,7 @@ Collect all results into `companies_raw.json`. Deduplicate by company name (fuzz
 
 For each company (batches of 3-5), launch a subagent:
 
-"Research these companies: [names + urls]. For each, determine:
+"Research these companies: [names + urls]. For each, use WebSearch and WebFetch to visit their website and determine:
 1. headquarters_country (ISO 3166-1 alpha-2 code)
 2. company_type: 'manufacturer' | 'integrator' | 'OEM_supplier' | 'defunct'
 3. makes_zoom_gimbals: true/false — do they make drone gimbals with optical zoom (10x+)?
@@ -72,7 +91,30 @@ Save to `companies_verified.json`. Filter to companies where makes_zoom_gimbals 
 
 For EACH company in `companies_final.json`, launch a separate subagent:
 
-"Research [company_name] ([website]). Find ALL drone camera gimbals they make that have optical zoom capability. For each product, extract:
+"Research [company_name] ([website]). Find ALL drone camera gimbals they make that have optical zoom capability.
+
+IMPORTANT — How to extract specs reliably:
+
+**Step 1: Identify products.** Use WebSearch to find the company's product listing page and identify individual product names and URLs.
+
+**Step 2: Fetch each product page individually.** Use WebFetch on EACH INDIVIDUAL PRODUCT PAGE — never rely on listing/category pages, which typically show only names and summaries without full spec tables. When fetching, prompt specifically for weight, price, dimensions, and all technical specs.
+
+**Step 3: Handle JS-rendered sites.** If WebFetch returns only JavaScript/CSS framework code with no readable product content, the site is client-side rendered. Do NOT retry the same URL. Instead, immediately fall back to WebSearch with the exact product name + 'specifications weight price'.
+
+**Step 4: Mandatory multi-source lookup for weight and price.** Weight and price are the two most critical specs. You MUST NOT leave them as null without trying ALL of these sources:
+  a. The manufacturer's own product page (via WebFetch)
+  b. WebSearch for '[exact product name] weight grams specifications'
+  c. WebSearch for '[exact product name] price USD buy'
+  d. Reseller/distributor sites: Amazon, AliExpress, DrUAV (druav.com), RCDrone (rcdrone.top), MotioNew (motionew.com), WorldDroneMarket (worldronemarket.com), UAVGarage (uavgarage.com), ThanksBuyer (thanksbuyer.com)
+  e. Aggregator sites: AeroExpo (aeroexpo.online), DroneMajor (dronemajor.net)
+  f. PDF datasheets and user manuals (search for '[product name] datasheet PDF' or '[product name] user manual')
+  g. Forum posts and reviews that mention specs
+
+Only mark weight_g or price_usd as null after you have tried at least 3 different sources and found nothing.
+
+**Step 5: Cross-check weights.** When you find a weight, verify it makes sense physically. A 10x zoom 3-axis gimbal typically weighs 350-500g. A 30x zoom 3-axis gimbal typically weighs 600-900g. A dual-sensor (EO+thermal) gimbal with 30x zoom typically weighs 700-1500g. If a weight seems implausible, search for a second source to confirm.
+
+For each product, extract:
 
 - product_name: string
 - model_number: string or null
@@ -110,6 +152,37 @@ For EACH company in `companies_final.json`, launch a separate subagent:
 Return ONLY a JSON array of product objects. Use null for specs you cannot find — do not guess. Exclude thermal-only products entirely."
 
 Save each company's products to `products/[company_name_slug].json`.
+
+## PHASE 4.5: Spec Gap-Fill and Validation
+
+After all product files are written, perform two passes:
+
+### Pass 1: Fill missing weight and price
+
+Read every product JSON file. For each product where weight_g is null OR price_usd is null, launch a subagent (batch up to 3 products per subagent):
+
+"These products are missing weight and/or price data. For EACH product, you MUST perform ALL of the following searches — do not stop after the first failure:
+
+1. WebSearch: '[product_name] [model_number] specifications weight grams'
+2. WebSearch: '[product_name] [model_number] price USD buy'
+3. WebSearch: '[product_name] [model_number] datasheet PDF'
+4. WebFetch on at least 2 reseller pages found in search results (e.g., DrUAV, RCDrone, MotioNew, Amazon, AliExpress, WorldDroneMarket, ThanksBuyer)
+5. WebFetch on any PDF datasheet or user manual URLs found in search results
+6. WebSearch: '[company_name] [product_name] review specs' (review sites often list specs the manufacturer page hides)
+
+Products to research:
+[list of {product_name, company, product_url, missing_fields}]
+
+Return a JSON array of {product_name, weight_g, price_usd, price_source, data_source_url} for each product. Only return null if you searched all 6 strategies above and found nothing. Include the URLs you checked in data_source_url so we can verify."
+
+Update the product files with any newly found specs. Re-evaluate meets_criteria and near_miss for updated products.
+
+### Pass 2: Validate meets_criteria and near_miss
+
+Re-read all product files. For each product, recompute:
+- meets_criteria: true only if optical_zoom >= 10x AND weight_g is known AND weight_g < 1000 AND price_usd is known AND price_usd < 10000
+- If weight_g or price_usd is null, set meets_criteria to false and near_miss to true with near_miss_reason explaining which spec is unknown
+- If weight_g >= 1000 or price_usd >= 10000, set meets_criteria to false and near_miss to true with the specific reason
 
 ## PHASE 5: Assembly & Export
 
@@ -169,6 +242,9 @@ Save each company's products to `products/[company_name_slug].json`.
 7. **Error handling**: If a subagent fails or returns malformed data, log to `errors.log` and continue. Retry once.
 8. **Price verification**: If a price seems unusually low or high, flag it in notable_features and note the source. Many of these products are sold B2B and prices vary widely.
 9. **Weight verification**: Confirm whether listed weight includes the gimbal, camera, and any required mounting hardware. Note discrepancies.
+10. **Always fetch individual product pages**: Category/listing pages rarely contain full specs. Always navigate to or search for the individual product page to get weight, dimensions, and pricing.
+11. **Handle JS-rendered sites**: If WebFetch returns only JavaScript/CSS framework code without product content, the site is client-side rendered. Fall back to WebSearch for specs from third-party sources, PDF datasheets, or reseller listings.
+12. **Exhaust price sources**: If the manufacturer says "contact for pricing", search resellers (Amazon, AliExpress, DrUAV, RCDrone, MotioNew, UAVGarage) before marking price as null.
 
 Start now with Phase 1.
 ```

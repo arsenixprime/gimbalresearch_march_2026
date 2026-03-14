@@ -10,8 +10,8 @@
 | Companies with qualifying products | 9 |
 | Companies with near-miss products only | 4 |
 | Total products cataloged | 43 |
-| Qualifying products | 28 |
-| Near-miss products | 14 |
+| Qualifying products | 27 |
+| Near-miss products | 15 |
 | Products failing all criteria | 1 |
 
 **Selection criteria:** optical zoom >= 10x AND weight < 1000g AND price < $10,000 AND daylight/visible camera
@@ -23,16 +23,15 @@
 | Product | Company | Optical Zoom | Weight (g) | Resolution | Price (USD) |
 |---------|---------|-------------|-----------|------------|-------------|
 | Foxtech Seeker-40 Pro TIR | Foxtech | 40x | -- | -- | $7,899 |
-| Yangda Sky Eye-40HZ | Yangda | 40x | -- | 1080P | $2,000 |
+| Yangda Sky Eye-40HZ | Yangda | 40x | 910 | 1080P | $2,000 |
 | Foxtech FH336 V2 | Foxtech | 36x | -- | 1080P | $4,599 |
 | DJI Zenmuse H30 | DJI | 34x | 920 | 4K | $3,850 |
 | DJI Zenmuse H30T | DJI | 34x | 920 | 4K | $7,500 |
 | SIYI ZR30 | SIYI Technology | 30x | 668 | 4K | $1,177 |
 | Foxtech SEEKER-30 TR | Foxtech | 30x | -- | 1080P | $3,899 |
 | Foxtech SYK-30 AI EO/IR | Foxtech | 30x | 770 | -- | $5,299 |
-| Yangda Sky Eye-U30 | Yangda | 30x | 690 | 1080P@60 | $1,485 |
-| Yangda Sky Eye-30HZ-S | Yangda | 30x | -- | 1080P | $1,750 |
-| Yangda Storm Eye-30IE-HT | Yangda | 30x | -- | 1080P | $4,000 |
+| Yangda Sky Eye-U30 | Yangda | 30x | 748 | 1080P@60 | $1,485 |
+| Yangda Sky Eye-30HZ-S | Yangda | 30x | 784 | 1080P | $1,750 |
 | Topotek SIP30S90 | Topotek | 30x | -- | 1080P | $1,500 |
 | Foxtech EH26 | Foxtech | 26x | 600 | 1080P | $1,199 |
 | Foxtech FH325 4K | Foxtech | 25x | -- | 4K | $3,749 |
@@ -59,6 +58,7 @@
 |---------|---------|---------------------|
 | SIYI A8 Mini | SIYI Technology | Only digital zoom (6x), no optical zoom |
 | Gremsy Orus L | Gremsy | Weight and price unknown |
+| Yangda Storm Eye-30IE-HT | Yangda | Weight 1470g exceeds 1000g limit |
 | Zingto Q350 | Zingto (INYYO) | Weight 1710g exceeds 1000g limit |
 | Ukrspecsystems USG-261 | Ukrspecsystems | Military, price unknown (likely >$10k) |
 | Ukrspecsystems USG-231 | Ukrspecsystems | Military, price unknown (likely >$10k) |
@@ -78,14 +78,14 @@
 
 | Country | Companies | Qualifying Products | Near-Miss Products |
 |---------|-----------|--------------------|--------------------|
-| China | 7 (SIYI, DJI, Foxtech, Yangda, Viewpro, Topotek, Zingto, CUAV) | 24 | 2 |
+| China | 7 (SIYI, DJI, Foxtech, Yangda, Viewpro, Topotek, Zingto, CUAV) | 23 | 3 |
 | Vietnam | 1 (Gremsy) | 2 | 1 |
 | Ukraine | 1 (Ukrspecsystems) | 0 | 2 |
 | Canada | 1 (Trillium Engineering) | 0 | 5 |
 | United States | 1 (Edge Autonomy) | 0 | 3 |
 | Israel | 1 (Controp) | 0 | 1 |
 
-**Key observation:** The commercial drone zoom gimbal market is heavily dominated by Chinese manufacturers, who account for 24 of 28 qualifying products (86%). Non-Chinese options are primarily military-grade and not commercially accessible.
+**Key observation:** The commercial drone zoom gimbal market is heavily dominated by Chinese manufacturers, who account for 23 of 27 qualifying products (85%). Non-Chinese options are primarily military-grade and not commercially accessible.
 
 ---
 
@@ -109,9 +109,9 @@
 |-------|-------|----------|
 | Under 400g | 3 | Topotek KIP10S4K (375g), SIYI ZR10 (381g), Topotek KHY10S90 (396g) |
 | 400 - 500g | 4 | Viewpro Q10F (413g), CUAV Q10F (413g), Foxtech EH10 (450g), Zingto Q12X (460g) |
-| 500 - 700g | 5 | Gremsy Zio (480g), Viewpro A10T Pro (539g), Foxtech EH26 (600g), SIYI ZR30 (668g), DJI Zenmuse H20 (678g), Yangda Sky Eye-U30 (690g) |
-| 700 - 1000g | 4 | Foxtech SYK-30 AI EO/IR (770g), DJI Zenmuse H20T (828g), Gremsy Vio (854g), DJI Zenmuse H30 (920g), DJI Zenmuse H30T (920g) |
-| Weight unknown | 11 | Multiple Foxtech, Yangda, and Topotek models |
+| 500 - 700g | 5 | Gremsy Zio (480g), Viewpro A10T Pro (539g), Foxtech EH26 (600g), SIYI ZR30 (668g), DJI Zenmuse H20 (678g) |
+| 700 - 1000g | 7 | Yangda Sky Eye-U30 (748g), Foxtech SYK-30 AI EO/IR (770g), Yangda Sky Eye-30HZ-S (784g), DJI Zenmuse H20T (828g), Gremsy Vio (854g), Yangda Sky Eye-40HZ (910g), DJI Zenmuse H30/H30T (920g) |
+| Weight unknown | 8 | Multiple Foxtech and Topotek models |
 
 **Lightest qualifying product:** Topotek KIP10S4K at 375g
 **Heaviest qualifying product:** DJI Zenmuse H30/H30T at 920g
