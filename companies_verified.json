@@ -1,0 +1,164 @@
+[
+  {
+    "name": "SIYI Technology",
+    "headquarters_country": "CN",
+    "company_type": "manufacturer",
+    "makes_zoom_gimbals": true,
+    "makes_near_miss_zoom": false,
+    "website": "https://shop.siyi.biz/",
+    "notes": "Shenzhen-based. Major consumer/prosumer drone gimbal brand. ZR10 (10x), ZR30 (30x), A8 (6x). Affordable pricing."
+  },
+  {
+    "name": "Viewpro",
+    "headquarters_country": "CN",
+    "company_type": "manufacturer",
+    "makes_zoom_gimbals": true,
+    "makes_near_miss_zoom": false,
+    "website": "https://www.viewprouav.com/",
+    "notes": "Chinese manufacturer and OEM supplier. Wide product range including Q10F (10x) and 30x models. Also supplies CUAV."
+  },
+  {
+    "name": "Topotek",
+    "headquarters_country": "CN",
+    "company_type": "manufacturer",
+    "makes_zoom_gimbals": true,
+    "makes_near_miss_zoom": false,
+    "website": "https://topotek.com/",
+    "notes": "Founded 2012 in China. Specializes in zoom cameras and multi-sensor gimbals. 10x to 90x hybrid zoom range."
+  },
+  {
+    "name": "DJI",
+    "headquarters_country": "CN",
+    "company_type": "manufacturer",
+    "makes_zoom_gimbals": true,
+    "makes_near_miss_zoom": false,
+    "website": "https://enterprise.dji.com/",
+    "notes": "World's largest drone manufacturer. Enterprise payloads: Zenmuse H20 (15x), H30 (34x). Gimbals only compatible with DJI drones."
+  },
+  {
+    "name": "Foxtech",
+    "headquarters_country": "CN",
+    "company_type": "manufacturer",
+    "makes_zoom_gimbals": true,
+    "makes_near_miss_zoom": false,
+    "website": "https://store.foxtech.com/",
+    "notes": "Chinese manufacturer. Multiple product lines: EH series, SEEKER series, SYK series. 10x-30x optical zoom."
+  },
+  {
+    "name": "Gremsy",
+    "headquarters_country": "VN",
+    "company_type": "manufacturer",
+    "makes_zoom_gimbals": true,
+    "makes_near_miss_zoom": false,
+    "website": "https://gremsy.com/",
+    "notes": "Vietnamese manufacturer. Known for quality gimbals. Zio (20x optical), Vio (20x), Orus L (25x). MAVLink native."
+  },
+  {
+    "name": "Yangda",
+    "headquarters_country": "CN",
+    "company_type": "manufacturer",
+    "makes_zoom_gimbals": true,
+    "makes_near_miss_zoom": false,
+    "website": "https://www.yangdaonline.com/",
+    "notes": "Chinese manufacturer. Sky Eye series (10x-40x optical zoom), Storm Eye series (30x-40x with thermal/LRF). Also makes VTOL drones."
+  },
+  {
+    "name": "Zingto",
+    "headquarters_country": "CN",
+    "company_type": "manufacturer",
+    "makes_zoom_gimbals": true,
+    "makes_near_miss_zoom": false,
+    "website": "https://www.zingto.com/",
+    "notes": "Chinese manufacturer. INYYO brand. Q12X (10x), Q350/Q353/Q355 (30x). Dual-sensor options available."
+  },
+  {
+    "name": "Ukrspecsystems",
+    "headquarters_country": "UA",
+    "company_type": "manufacturer",
+    "makes_zoom_gimbals": true,
+    "makes_near_miss_zoom": false,
+    "website": "https://ukrspecsystems.com/",
+    "notes": "Ukrainian manufacturer. USG-261 (10x, 400g), USG-231 (30x). Also makes PD-1 UAV. Military-focused."
+  },
+  {
+    "name": "Trillium Engineering",
+    "headquarters_country": "CA",
+    "company_type": "manufacturer",
+    "makes_zoom_gimbals": true,
+    "makes_near_miss_zoom": false,
+    "website": "https://www.trilliumeng.com/",
+    "notes": "Canadian manufacturer. HD25 (12x, <400g), HD45 (20x, 885g). Military/defense focused. Group 1-3 UAS."
+  },
+  {
+    "name": "Edge Autonomy",
+    "headquarters_country": "US",
+    "company_type": "manufacturer",
+    "makes_zoom_gimbals": true,
+    "makes_near_miss_zoom": false,
+    "website": "https://edgeautonomy.io/",
+    "notes": "US manufacturer, formerly Octopus ISR. E95, E140, E180 series. Up to 30x zoom. Military/defense. Non-ITAR options."
+  },
+  {
+    "name": "Controp",
+    "headquarters_country": "IL",
+    "company_type": "manufacturer",
+    "makes_zoom_gimbals": true,
+    "makes_near_miss_zoom": false,
+    "website": "https://www.controp.com/",
+    "notes": "Israeli manufacturer. Premium EO/IR gimbals. Primarily military. Likely exceeds $10k price point."
+  },
+  {
+    "name": "CUAV",
+    "headquarters_country": "CN",
+    "company_type": "manufacturer",
+    "makes_zoom_gimbals": true,
+    "makes_near_miss_zoom": false,
+    "website": "https://www.cuav.net/",
+    "notes": "Chinese manufacturer. Q10F (10x optical, 413g). Uses Viewpro OEM components. Also makes flight controllers."
+  },
+  {
+    "name": "Threod Systems",
+    "headquarters_country": "EE",
+    "company_type": "manufacturer",
+    "makes_zoom_gimbals": true,
+    "makes_near_miss_zoom": false,
+    "website": "https://threod.com/",
+    "notes": "Estonian manufacturer. Shark gimbal series. Military-focused. Limited public specs."
+  },
+  {
+    "name": "Sky-Drones",
+    "headquarters_country": "GB",
+    "company_type": "integrator",
+    "makes_zoom_gimbals": false,
+    "makes_near_miss_zoom": false,
+    "website": "https://sky-drones.com/",
+    "notes": "UK-based integrator. Sells third-party payloads, does not manufacture gimbals. Platform/software company."
+  },
+  {
+    "name": "Savgood Technology",
+    "headquarters_country": "CN",
+    "company_type": "OEM_supplier",
+    "makes_zoom_gimbals": false,
+    "makes_near_miss_zoom": true,
+    "website": "https://savgood.en.made-in-china.com/",
+    "notes": "Chinese OEM. Makes zoom camera modules, not complete drone gimbals. Supplies components to gimbal manufacturers."
+  },
+  {
+    "name": "Digital Eagle",
+    "headquarters_country": "CN",
+    "company_type": "manufacturer",
+    "makes_zoom_gimbals": true,
+    "makes_near_miss_zoom": false,
+    "website": "https://www.aieagleuav.com/",
+    "notes": "Chinese manufacturer. Makes both drones and zoom camera payloads."
+  },
+  {
+    "name": "Autel Robotics",
+    "headquarters_country": "CN",
+    "company_type": "manufacturer",
+    "makes_zoom_gimbals": true,
+    "makes_near_miss_zoom": false,
+    "website": "https://www.autelrobotics.com/",
+    "notes": "Chinese/US manufacturer. EVO Max 4T has 10x optical zoom. Gimbals not typically sold separately for third-party drones."
+  }
+]

@@ -1,0 +1,21 @@
+[
+  {"name": "SIYI Technology", "url": "https://shop.siyi.biz/", "notes": "Chinese manufacturer. ZR10 (10x optical), ZR30 (30x optical), A8 series. Lightweight options."},
+  {"name": "Viewpro", "url": "https://www.viewprouav.com/", "notes": "Chinese manufacturer. Multiple zoom gimbal models including Q10F, U30TIRM Pro (30x). Also OEM supplier."},
+  {"name": "Topotek", "url": "https://topotek.com/", "notes": "Chinese manufacturer founded 2012. 10x-90x zoom cameras, multi-sensor gimbals. KHY10S90, KIP10S4K, SIP30S90."},
+  {"name": "DJI", "url": "https://enterprise.dji.com/", "notes": "Chinese manufacturer. Zenmuse H20 (15x zoom, 678g), Zenmuse H30 (34x zoom, 920g). Enterprise payloads."},
+  {"name": "Foxtech", "url": "https://store.foxtech.com/", "notes": "Chinese manufacturer. EH26 (26x), EH30 (30x), SEEKER-30 (30x), SYK-30 AI (30x, 770g). Multiple product lines."},
+  {"name": "Gremsy", "url": "https://gremsy.com/", "notes": "Vietnamese manufacturer. Zio (20x optical/30x hybrid), Vio (20x optical), Orus L (25x). MAVLink compatible."},
+  {"name": "Yangda", "url": "https://www.yangdaonline.com/", "notes": "Chinese manufacturer. Sky Eye series (10x-40x zoom), Storm Eye series (30x-40x zoom). Wide product range."},
+  {"name": "Zingto", "url": "https://rcdrone.top/collections/zingto-camera-gimbal", "notes": "Chinese manufacturer. INYYO series: Q12X (10x), Q350/Q353/Q355 (30x). 2K-4K EO with thermal options."},
+  {"name": "Ukrspecsystems", "url": "https://ukrspecsystems.com/", "notes": "Ukrainian manufacturer. USG-261 (10x, 400g), USG-231 (30x), USG-405 (30x + IR + LRF)."},
+  {"name": "Trillium Engineering", "url": "https://www.trilliumeng.com/", "notes": "Canadian manufacturer. HD25 (12x, <400g), HD45 (20x, 885g), HD55, HD80 (72x). Military/defense focused."},
+  {"name": "Edge Autonomy (formerly Octopus ISR)", "url": "https://edgeautonomy.io/", "notes": "US manufacturer. E95 (570g), E140LC, E140Z, E180. Up to 30x optical zoom. Military/defense."},
+  {"name": "Controp", "url": "https://www.controp.com/", "notes": "Israeli manufacturer. EO/IR gimbals for UAVs. Military/defense focused. Premium pricing."},
+  {"name": "CUAV", "url": "https://www.cuav.net/", "notes": "Chinese manufacturer. Q10F (10x optical, 413g). Uses Viewpro OEM components."},
+  {"name": "Threod Systems", "url": "https://threod.com/", "notes": "Estonian manufacturer. Shark gimbal for small UAVs. Integrated with proprietary autopilot."},
+  {"name": "Sky-Drones", "url": "https://sky-drones.com/", "notes": "UK-based. Offers payloads with 10x/20x/30x optical zoom. Integration platform."},
+  {"name": "Savgood Technology", "url": "https://savgood.en.made-in-china.com/", "notes": "Chinese OEM. Zoom camera modules including UAV modules. B2B/OEM supplier."},
+  {"name": "Digital Eagle", "url": "https://www.aieagleuav.com/", "notes": "Chinese manufacturer. Tracking cameras for UAVs. Both drones and payloads."},
+  {"name": "Autel Robotics", "url": "https://www.autelrobotics.com/", "notes": "Chinese/US manufacturer. EVO Max 4T has 10x optical zoom. Primarily makes complete drones, gimbals not sold separately for third-party drones."},
+  {"name": "Mugin UAV", "url": "https://www.muginuav.com/", "notes": "Chinese manufacturer. Makes UAVs and carries third-party gimbals. May resell rather than manufacture."}
+]
