@@ -1,0 +1,50 @@
+{
+  "company": "Autel Robotics",
+  "headquarters": "Bothell, WA, USA (HQ); Shenzhen, China (R&D)",
+  "website": "https://www.autelrobotics.com",
+  "products": [
+    {
+      "product_name": "DG-L35T Gimbal Camera",
+      "model_number": "DG-L35T (also marketed as L35T)",
+      "gimbal_axes": 3,
+      "optical_zoom": "35x (zoom camera)",
+      "digital_zoom_max": "16x (hybrid extends to 560x total)",
+      "total_zoom_combined": "560x hybrid zoom",
+      "sensor_type": "1/1.8 inch CMOS (zoom camera, 8MP); 1/2 inch CMOS (wide-angle, 48MP); 640x512 uncooled VOx (dual thermal sensors)",
+      "sensor_size": "1/1.8 inch (zoom), 1/2 inch (wide-angle)",
+      "megapixels": "8 MP (zoom camera), 48 MP (wide-angle camera)",
+      "max_photo_resolution": "48 MP (wide-angle); 8 MP (zoom)",
+      "max_video_resolution": "4K (zoom camera)",
+      "has_night_vision": true,
+      "has_thermal": true,
+      "weight_g": null,
+      "dimensions_mm": null,
+      "power_consumption_w": null,
+      "voltage_input": null,
+      "stabilization_range_pitch": null,
+      "stabilization_range_yaw": null,
+      "stabilization_range_roll": null,
+      "output_interface": null,
+      "control_protocol": "Autel proprietary (designed for Autel Alpha and Titan platforms)",
+      "compatible_drones": "Autel Alpha, Autel Titan",
+      "ip_rating": null,
+      "price_usd": null,
+      "price_source": "Sold as standalone gimbal and in bundles with Autel Alpha drone. Gimbal-only pricing available from resellers (Volatus Drones, B&H Photo, DSLRPros, Drone Nerds) but not publicly listed on most sites; contact for quote. Full Alpha + L35T bundles available from multiple authorized dealers.",
+      "availability": "Available (commercial sales through authorized dealers)",
+      "product_url": "https://www.bhphotovideo.com/c/product/1815673-REG/autel_robotics_102002553_l35t_gimbal.html",
+      "notable_features": [
+        "5-in-1 sensor system: zoom camera, wide-angle camera, dual thermal cameras, laser rangefinder",
+        "35x optical zoom with 560x hybrid zoom",
+        "Ultra-sensitive starlight night vision (4K 30fps in low light)",
+        "Dual thermal imagers: 13mm wide-angle + 45mm telephoto (640x512)",
+        "56x hybrid zoom on thermal channels",
+        "Laser rangefinder: 10-2000m range, +/-(1m + D*0.15%) accuracy",
+        "48MP wide-angle camera (84 deg DFOV, 24mm equivalent)",
+        "Designed as standalone swappable gimbal for Autel Alpha platform"
+      ],
+      "meets_criteria": false,
+      "near_miss": false,
+      "near_miss_reason": "Weight of gimbal alone not publicly listed but Autel Alpha with battery and gimbal is 6250g total, suggesting gimbal is likely 1500-2500g. Designed for large enterprise drone platform. Price of full system likely exceeds $10,000."
+    }
+  ]
+}

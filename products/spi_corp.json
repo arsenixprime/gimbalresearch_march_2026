@@ -1,0 +1,51 @@
+{
+  "company": "SPI Corp",
+  "headquarters": "Las Vegas, NV, USA",
+  "website": "https://www.x20.org",
+  "products": [
+    {
+      "product_name": "M2-D Micro Stabilized EO/IR Gimbal",
+      "model_number": "M2-D",
+      "gimbal_axes": 2,
+      "optical_zoom": "6.6x (EO channel); thermal channel also has optical zoom",
+      "digital_zoom_max": "2x",
+      "total_zoom_combined": "13.2x (6.6x optical x 2x digital)",
+      "sensor_type": "BSI CMOS (EO visible) + LWIR UFPA 640x512 (thermal)",
+      "sensor_size": null,
+      "megapixels": null,
+      "max_photo_resolution": "1280x1080 (HD variant)",
+      "max_video_resolution": "HD 1280x1080; also available in 660x520 and 388x288 configurations",
+      "has_night_vision": true,
+      "has_thermal": true,
+      "weight_g": 160,
+      "dimensions_mm": "65 x 92 mm",
+      "power_consumption_w": 9,
+      "voltage_input": null,
+      "stabilization_range_pitch": null,
+      "stabilization_range_yaw": "continuous",
+      "stabilization_range_roll": null,
+      "output_interface": null,
+      "control_protocol": "SBUS, PWM adapters available",
+      "compatible_drones": "UAVs, UAS, sUAS, multicopters, UGV, marine applications",
+      "ip_rating": "All-weather ruggedized (specific IP not published)",
+      "price_usd": 5990,
+      "price_source": "x20.org product page (long range 82X gyrostabilized gimbal variant listed at $5,990; base M2-D pricing may differ by configuration)",
+      "availability": "Available (commercial sales via x20.org)",
+      "product_url": "https://www.x20.org/m2-d-stabilized-eo-ir-flir-uav-flir-thermal-camera-gimbal/",
+      "notable_features": [
+        "World's smallest thermal drone gimbal at 160g",
+        "Dual EO/IR channels with zoom on both",
+        "640x512 ultra-sensitive thermal LWIR UFPA",
+        "Geo-reference tracking module",
+        "Advanced target tracking",
+        "All-weather ruggedized design",
+        "Operating temperature: -20C to +60C",
+        "Under 9W power consumption",
+        "Multiple resolution configurations available"
+      ],
+      "meets_criteria": false,
+      "near_miss": true,
+      "near_miss_reason": "Only 6.6x optical zoom (below 10x threshold). Weight 160g is excellent and well under 1000g. Price ~$5,990 is under $10,000. Misses on zoom only."
+    }
+  ]
+}

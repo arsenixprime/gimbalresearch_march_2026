@@ -1,114 +1,25 @@
 [
-  {
-    "name": "SIYI Technology",
-    "headquarters_country": "CN",
-    "company_type": "manufacturer",
-    "website": "https://shop.siyi.biz/",
-    "notes": "Shenzhen-based. ZR10 (10x), ZR30 (30x), A8 (6x). Affordable pricing."
-  },
-  {
-    "name": "Viewpro",
-    "headquarters_country": "CN",
-    "company_type": "manufacturer",
-    "website": "https://www.viewprouav.com/",
-    "notes": "Wide product range. Q10F (10x), 30x models. Also OEM supplier."
-  },
-  {
-    "name": "Topotek",
-    "headquarters_country": "CN",
-    "company_type": "manufacturer",
-    "website": "https://topotek.com/",
-    "notes": "10x to 90x hybrid zoom range. Multi-sensor options."
-  },
-  {
-    "name": "DJI",
-    "headquarters_country": "CN",
-    "company_type": "manufacturer",
-    "website": "https://enterprise.dji.com/",
-    "notes": "Zenmuse H20 (15x), H30 (34x). DJI-drone-only compatible."
-  },
-  {
-    "name": "Foxtech",
-    "headquarters_country": "CN",
-    "company_type": "manufacturer",
-    "website": "https://store.foxtech.com/",
-    "notes": "EH series, SEEKER series, SYK series. 10x-30x optical zoom."
-  },
-  {
-    "name": "Gremsy",
-    "headquarters_country": "VN",
-    "company_type": "manufacturer",
-    "website": "https://gremsy.com/",
-    "notes": "Zio (20x), Vio (20x), Orus L (25x). MAVLink native."
-  },
-  {
-    "name": "Yangda",
-    "headquarters_country": "CN",
-    "company_type": "manufacturer",
-    "website": "https://www.yangdaonline.com/",
-    "notes": "Sky Eye (10x-40x), Storm Eye (30x-40x). Also makes drones."
-  },
-  {
-    "name": "Zingto",
-    "headquarters_country": "CN",
-    "company_type": "manufacturer",
-    "website": "https://www.zingto.com/",
-    "notes": "INYYO brand. Q12X (10x), Q350 (30x). Dual-sensor options."
-  },
-  {
-    "name": "Ukrspecsystems",
-    "headquarters_country": "UA",
-    "company_type": "manufacturer",
-    "website": "https://ukrspecsystems.com/",
-    "notes": "USG-261 (10x, 400g), USG-231 (30x). Military-focused."
-  },
-  {
-    "name": "Trillium Engineering",
-    "headquarters_country": "CA",
-    "company_type": "manufacturer",
-    "website": "https://www.trilliumeng.com/",
-    "notes": "HD25 (12x, <400g), HD45 (20x, 885g). Military/defense."
-  },
-  {
-    "name": "Edge Autonomy",
-    "headquarters_country": "US",
-    "company_type": "manufacturer",
-    "website": "https://edgeautonomy.io/",
-    "notes": "Formerly Octopus ISR. E95, E140, E180 series. Military/defense."
-  },
-  {
-    "name": "Controp",
-    "headquarters_country": "IL",
-    "company_type": "manufacturer",
-    "website": "https://www.controp.com/",
-    "notes": "Premium EO/IR gimbals. Primarily military. Likely >$10k."
-  },
-  {
-    "name": "CUAV",
-    "headquarters_country": "CN",
-    "company_type": "manufacturer",
-    "website": "https://www.cuav.net/",
-    "notes": "Q10F (10x, 413g). Uses Viewpro OEM. Also makes flight controllers."
-  },
-  {
-    "name": "Threod Systems",
-    "headquarters_country": "EE",
-    "company_type": "manufacturer",
-    "website": "https://threod.com/",
-    "notes": "Shark gimbal series. Military-focused."
-  },
-  {
-    "name": "Digital Eagle",
-    "headquarters_country": "CN",
-    "company_type": "manufacturer",
-    "website": "https://www.aieagleuav.com/",
-    "notes": "Makes both drones and zoom camera payloads."
-  },
-  {
-    "name": "Autel Robotics",
-    "headquarters_country": "CN",
-    "company_type": "manufacturer",
-    "website": "https://www.autelrobotics.com/",
-    "notes": "EVO Max 4T (10x zoom). Gimbals not sold separately for third-party drones."
-  }
+  {"name": "SIYI Technology", "headquarters_country": "CN", "company_type": "manufacturer", "website": "https://shop.siyi.biz"},
+  {"name": "Viewpro", "headquarters_country": "CN", "company_type": "manufacturer", "website": "https://www.viewproonline.com"},
+  {"name": "Gremsy", "headquarters_country": "VN", "company_type": "manufacturer", "website": "https://gremsy.com"},
+  {"name": "DJI", "headquarters_country": "CN", "company_type": "manufacturer", "website": "https://enterprise.dji.com"},
+  {"name": "Foxtech", "headquarters_country": "CN", "company_type": "manufacturer", "website": "https://store.foxtech.com"},
+  {"name": "Topotek", "headquarters_country": "CN", "company_type": "OEM_supplier", "website": "https://topotek.com"},
+  {"name": "Yangda", "headquarters_country": "CN", "company_type": "manufacturer", "website": "https://www.yangdaonline.com"},
+  {"name": "Zingto", "headquarters_country": "CN", "company_type": "manufacturer", "website": "https://www.zingto-aerotech.com"},
+  {"name": "JOUAV", "headquarters_country": "CN", "company_type": "manufacturer", "website": "https://www.jouav.com"},
+  {"name": "GWD Bio-intelligence", "headquarters_country": "CN", "company_type": "OEM_supplier", "website": "https://gwdbi.com"},
+  {"name": "Controp", "headquarters_country": "IL", "company_type": "manufacturer", "website": "https://www.controp.com"},
+  {"name": "Trillium Engineering", "headquarters_country": "US", "company_type": "manufacturer", "website": "https://www.trilliumeng.com"},
+  {"name": "NextVision", "headquarters_country": "IL", "company_type": "manufacturer", "website": "https://nextvision-sys.com"},
+  {"name": "Edge Autonomy", "headquarters_country": "US", "company_type": "manufacturer", "website": "https://rdw.com/product-archive/octopus-isr-and-optics-payloads/"},
+  {"name": "UkrSpecSystems", "headquarters_country": "UA", "company_type": "manufacturer", "website": "https://ukrspecsystems.com"},
+  {"name": "Viewsheen", "headquarters_country": "CN", "company_type": "OEM_supplier", "website": "https://www.viewsheen.com"},
+  {"name": "SPI Corp", "headquarters_country": "US", "company_type": "manufacturer", "website": "https://www.x20.org"},
+  {"name": "UXV Technologies", "headquarters_country": "DK", "company_type": "manufacturer", "website": "https://www.uxvtechnologies.com"},
+  {"name": "Skydroid", "headquarters_country": "CN", "company_type": "manufacturer", "website": "https://www.skydroid.xin"},
+  {"name": "Xingkai Technology", "headquarters_country": "CN", "company_type": "manufacturer", "website": "https://xingkaitech.com"},
+  {"name": "CZI", "headquarters_country": "CN", "company_type": "manufacturer", "website": "https://www.gzczzn.com"},
+  {"name": "Aero Sentinel", "headquarters_country": "IL", "company_type": "integrator", "website": "https://www.aero-sentinel.com"},
+  {"name": "Autel Robotics", "headquarters_country": "CN", "company_type": "manufacturer", "website": "https://www.autelrobotics.com"}
 ]

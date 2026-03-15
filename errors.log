@@ -1,8 +1,0 @@
-2026-03-14 Phase 2: All 4 subagents denied WebSearch/WebFetch permissions. Fell back to direct web searches from main conversation.
-2026-03-14 Phase 4: WebFetch returned empty/JS-only content for several manufacturer homepages (SIYI shop, Gremsy, Ukrspecsystems). Used web search to gather specs instead.
-2026-03-14 Phase 4: Foxtech product pages returned 403 for some URLs. Used search results and store listings for specs.
-2026-03-14 Phase 4: Edge Autonomy redirected to rdw.com (Redwire Space acquisition). Product archive page had no extractable specs.
-2026-03-14 Phase 4: Weight data missing for several Foxtech models (EH10, EH26). Estimated from similar products in lineup.
-2026-03-14 Phase 4: Pricing unavailable for most military/defense companies (Trillium, Edge Autonomy, Controp, Ukrspecsystems, Threod). Marked as null.
-2026-03-14 Phase 4: Threod Systems and Digital Eagle had insufficient public product data. Included as companies but limited product entries.
-2026-03-14 Phase 4: Autel Robotics excluded from product research - gimbals not sold separately for third-party drone mounting.

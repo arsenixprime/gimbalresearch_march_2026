@@ -243,8 +243,11 @@ Re-read all product files. For each product, recompute:
 8. **Price verification**: If a price seems unusually low or high, flag it in notable_features and note the source. Many of these products are sold B2B and prices vary widely.
 9. **Weight verification**: Confirm whether listed weight includes the gimbal, camera, and any required mounting hardware. Note discrepancies.
 10. **Always fetch individual product pages**: Category/listing pages rarely contain full specs. Always navigate to or search for the individual product page to get weight, dimensions, and pricing.
-11. **Handle JS-rendered sites**: If WebFetch returns only JavaScript/CSS framework code without product content, the site is client-side rendered. Fall back to WebSearch for specs from third-party sources, PDF datasheets, or reseller listings.
-12. **Exhaust price sources**: If the manufacturer says "contact for pricing", search resellers (Amazon, AliExpress, DrUAV, RCDrone, MotioNew, UAVGarage) before marking price as null.
+11. **Handle JS-rendered sites**: If WebFetch returns only JavaScript/CSS framework code without product content, the site is client-side rendered. Do NOT retry the same URL — immediately switch to WebSearch for the product specs from third-party sources, PDF datasheets, or reseller listings.
+12. **Exhaust price sources**: If the manufacturer says "contact for pricing", you MUST search resellers (Amazon, AliExpress, DrUAV, RCDrone, MotioNew, UAVGarage, ThanksBuyer, WorldDroneMarket) before marking price as null.
+13. **Exhaust weight sources**: Weight is listed on virtually every gimbal product page or datasheet. If you don't find it on the manufacturer page, check reseller listings, PDF manuals, and review articles. A null weight after only checking one source is unacceptable.
+14. **Multi-source minimum**: For every product, you must attempt to extract weight and price from at least 3 independent sources before marking either as null. Log which sources were checked in the product's notable_features array (e.g., "weight not found after checking: manufacturer page, DrUAV, Amazon, PDF datasheet").
+15. **No blanket WebFetch domain restrictions**: The `.claude/settings.local.json` file grants unrestricted WebFetch access. Do not hesitate to fetch any URL from any domain — resellers, aggregators, forums, PDF hosts, etc.
 
 Start now with Phase 1.
 ```
