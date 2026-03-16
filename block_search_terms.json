@@ -1,0 +1,49 @@
+{
+  "general_discovery": [
+    "block camera 10x optical zoom",
+    "block camera 30x optical zoom module",
+    "zoom block camera module OEM",
+    "board level zoom camera 20x",
+    "OEM zoom camera module drone",
+    "mini zoom camera module 30x",
+    "integrated zoom camera board",
+    "compact zoom camera unit 10x 20x 30x",
+    "zoom camera engine OEM",
+    "autofocus zoom lens camera module",
+    "PTZ camera module zoom core",
+    "zoom camera core module lightweight"
+  ],
+  "interface_focused": [
+    "LVDS zoom camera module",
+    "IP zoom camera module MIPI",
+    "HDMI output zoom block camera",
+    "analog zoom camera module CVBS",
+    "MIPI CSI zoom camera module",
+    "SDI zoom camera module HD-SDI 3G-SDI",
+    "USB zoom camera module UVC",
+    "ethernet RTSP zoom camera module",
+    "block camera zoom ethernet output"
+  ],
+  "brand_targeted": [
+    "Sony FCB block camera zoom",
+    "Sony FCB-EV7520 specifications",
+    "Tamron MP3010M-EV zoom module",
+    "Tamron zoom camera module",
+    "Dahua zoom camera module block",
+    "Hikvision zoom camera module OEM",
+    "Hanwha Techwin zoom module",
+    "Samsung Techwin zoom block camera",
+    "Videology zoom camera module",
+    "Sunny Optical zoom module"
+  ],
+  "application_targeted": [
+    "UAV zoom camera module lightweight",
+    "surveillance zoom camera block",
+    "EO zoom camera core ISR",
+    "drone zoom camera module under 500g",
+    "starlight zoom camera module",
+    "global shutter zoom block camera",
+    "machine vision zoom camera module",
+    "robotic zoom camera module compact"
+  ]
+}

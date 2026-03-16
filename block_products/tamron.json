@@ -1,0 +1,93 @@
+[
+  {
+    "product_name": "Tamron Compact Camera Module MP3010M-EV",
+    "model_number": "MP3010M-EV",
+    "optical_zoom": 10,
+    "digital_zoom_max": 16,
+    "total_zoom_combined": 160,
+    "focal_length_range_mm": "3.3-33",
+    "sensor_type": "Sony STARVIS CMOS (likely IMX327 or similar STARVIS series)",
+    "sensor_size": "1/2.8\"",
+    "megapixels": 5,
+    "max_photo_resolution": "2592x1944",
+    "max_video_resolution": "1920x1080 @ 60fps",
+    "has_night_vision": true,
+    "has_thermal": false,
+    "stabilization_type": "electronic",
+    "stabilization_notes": "Enhanced Electronic Image Stabilization (EIS). No optical stabilization on this model (predecessor MP1010M-VC had optional OIS).",
+    "weight_g": 70,
+    "dimensions_mm": "59 x 33 x 43",
+    "video_output_interfaces": [
+      "LVDS",
+      "HDMI",
+      "UVC (USB Video Class, up to 1080p/30)"
+    ],
+    "control_interface": [
+      "TTL serial",
+      "RS-232",
+      "RS-485"
+    ],
+    "control_protocol": "VISCA",
+    "power_consumption_w": 2.5,
+    "voltage_input": "DC 8-12V (+/-10%)",
+    "operating_temp_range": "-5C to 60C",
+    "ip_rating": null,
+    "autofocus": true,
+    "price_usd": 450,
+    "price_source": "block-cameras.com / usasecuritysystems.com (approximate, may vary by distributor)",
+    "availability": "In production, available from multiple distributors",
+    "product_url": "https://www.tamron.com/global/biz/products/ccm/mp3010m-ev.html",
+    "notable_features": [
+      "Ultra-compact and lightweight at 70g",
+      "Sony STARVIS sensor for excellent low-light (0.1 lx color, 0.025 lx B&W)",
+      "Day/Night ICR switching",
+      "16-step aperture control",
+      "3D + 2D noise reduction",
+      "Wide Dynamic Range (WDR)",
+      "Defogging function",
+      "Privacy zone masking",
+      "Successor to MP1010M-VC, launched August 2022",
+      "F/1.8-3.4 aperture range"
+    ],
+    "meets_criteria": true,
+    "near_miss": false,
+    "near_miss_reason": null,
+    "_data_confidence": {
+      "high_confidence": [
+        "model_number",
+        "optical_zoom",
+        "digital_zoom_max",
+        "focal_length_range_mm",
+        "weight_g",
+        "dimensions_mm",
+        "video_output_interfaces",
+        "control_interface",
+        "control_protocol",
+        "stabilization_type",
+        "autofocus",
+        "max_video_resolution"
+      ],
+      "medium_confidence": [
+        "sensor_size",
+        "megapixels",
+        "power_consumption_w",
+        "voltage_input",
+        "operating_temp_range",
+        "price_usd"
+      ],
+      "low_confidence_or_not_found": [
+        "max_photo_resolution",
+        "ip_rating"
+      ],
+      "sources_consulted": [
+        "https://www.tamron.com/global/biz/products/ccm/mp3010m-ev.html",
+        "https://block-cameras.com/products/tamron-mp3010m-ev-ultra-compact-full-hd-camera-module",
+        "https://aegis-elec.com/tamron-mp3010m-ev.html",
+        "https://www.activesilicon.com/products/tamron-mp3010m/",
+        "https://evision-systems-video.com/Tamron-MP3010M-EV/SL4655-EVK-Tamron-MP3010M-EV",
+        "https://www.allwan.eu/en/camera-modules/1185-mp3010m-ev-module-camera-zoom-10x-tamron-compact.html",
+        "https://www.usasecuritysystems.com/products/tamron-mp3010m-ev"
+      ]
+    }
+  }
+]

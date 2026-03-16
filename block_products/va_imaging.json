@@ -1,0 +1,92 @@
+[
+  {
+    "product_name": "VA Imaging 2MP 10x AutoFocus Zoom MIPI Camera for Raspberry Pi",
+    "model_number": "2MP 10x AFZ MIPI",
+    "optical_zoom": 10,
+    "digital_zoom_max": 32,
+    "total_zoom_combined": 320,
+    "focal_length_range_mm": "5.1-51",
+    "sensor_type": "Sony IMX462 STARVIS CMOS",
+    "sensor_size": "1/2.8\"",
+    "megapixels": 2,
+    "max_photo_resolution": "1920x1080",
+    "max_video_resolution": "1920x1080 @ 60fps",
+    "has_night_vision": true,
+    "has_thermal": false,
+    "stabilization_type": "electronic",
+    "stabilization_notes": "Digital Image Stabilization listed as a feature.",
+    "weight_g": null,
+    "dimensions_mm": null,
+    "video_output_interfaces": [
+      "MIPI CSI-2 (direct Raspberry Pi connection, recognized as native Pi camera)"
+    ],
+    "control_interface": [
+      "I2C (via Raspberry Pi bus)",
+      "Serial (VISCA/Pelco)"
+    ],
+    "control_protocol": "VISCA, Pelco-D, Pelco-P, I2C",
+    "power_consumption_w": null,
+    "voltage_input": null,
+    "operating_temp_range": null,
+    "ip_rating": null,
+    "autofocus": true,
+    "price_usd": null,
+    "price_source": "Contact VA Imaging directly or check https://va-imaging.com; also available via GeT Cameras (EU distributor)",
+    "availability": "In production, orderable online from VA Imaging website",
+    "product_url": "https://va-imaging.com/products/2mp-10x-autofocuszoom-mipi-camera-raspberry-pi",
+    "notable_features": [
+      "Direct MIPI CSI-2 connection to Raspberry Pi (no USB or HDMI adapter needed)",
+      "Recognized as native Raspberry Pi camera module by OS",
+      "Includes HAT board for power and I2C command interface",
+      "2.95um pixel size - approximately 9x more light sensitive than 8MP Pi camera",
+      "Real-time True WDR with High Light Compensation",
+      "2D + 3D Digital Noise Reduction",
+      "Privacy Mask Function",
+      "Intelligent Motion Detection",
+      "Defog Function",
+      "Controllable zoom and focus from Raspberry Pi software",
+      "Also compatible with NVIDIA Jetson platforms (via e-con Systems FarVis22 variant)"
+    ],
+    "meets_criteria": true,
+    "near_miss": false,
+    "near_miss_reason": null,
+    "_data_confidence": {
+      "high_confidence": [
+        "model_number",
+        "optical_zoom",
+        "digital_zoom_max",
+        "focal_length_range_mm",
+        "sensor_type",
+        "sensor_size",
+        "megapixels",
+        "max_video_resolution",
+        "video_output_interfaces",
+        "control_interface",
+        "control_protocol",
+        "autofocus",
+        "stabilization_type"
+      ],
+      "medium_confidence": [
+        "has_night_vision",
+        "max_photo_resolution"
+      ],
+      "low_confidence_or_not_found": [
+        "weight_g",
+        "dimensions_mm",
+        "power_consumption_w",
+        "voltage_input",
+        "operating_temp_range",
+        "ip_rating",
+        "price_usd"
+      ],
+      "notes": "VA Imaging publishes functional specifications prominently but physical specs (weight, dimensions, power) and pricing are not readily available in public search results. The product page likely shows pricing when visited directly (WebFetch was denied). Weight is described as 'low' but no specific gram value was found. The camera is noted to be compact but exact dimensions were not published in search-accessible sources.",
+      "sources_consulted": [
+        "https://va-imaging.com/products/2mp-10x-autofocuszoom-mipi-camera-raspberry-pi",
+        "https://www.get-cameras.com/2MP-10x-AutoFocusZoom-MIPI-Camera-Raspberry-Pi",
+        "https://forums.raspberrypi.com/viewtopic.php?t=305762",
+        "https://www.e-consystems.com/nvidia-cameras/jetson-orin-nx-cameras/2mp-sony-starvis-imx462-10x-optical-zoom-af-camera.asp",
+        "https://va-imaging.com/en-us/pages/vision-camera-frequently-asked-questions"
+      ]
+    }
+  }
+]

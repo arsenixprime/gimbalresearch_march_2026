@@ -1,0 +1,19 @@
+[
+  {"name": "Sony (FCB series)", "url": "https://pro.sony/ue_US/products/zoom-camera-blocks", "notes": "FCB-EV7520 (30x), FCB-ER9500 (30x 4K), FCB-EW9500H (30x 4K HDMI), FCB-ER8530 (20x 4K). Industry standard."},
+  {"name": "Tamron", "url": "https://www.tamron.com/global/biz/products/ccm/", "notes": "MP3010M-EV (10x, 70g). Ultra-compact camera modules."},
+  {"name": "Viewsheen", "url": "https://www.viewsheen.com", "notes": "Hangzhou. 2MP-4K zoom modules, 10x-100x. OEM/ODM."},
+  {"name": "KT&C", "url": "https://intertest.com/collections", "notes": "ATC-HZ series: 10x, 22x, 30x, 40x. Global shutter 4K MIPI and HDMI."},
+  {"name": "Videology", "url": "https://www.videologyinc.com", "notes": "SCAiLX Edge AI zoom block cameras. 10x-55x. US manufacturer."},
+  {"name": "Skoopia", "url": "https://www.skoopia.com", "notes": "85Z18H (18x 4K HDMI+MIPI). Sony FCB replacements."},
+  {"name": "Active Silicon", "url": "https://www.activesilicon.com", "notes": "Harrier cameras — interface boards for Sony FCB and Tamron. 3G-SDI, USB3, Ethernet IP."},
+  {"name": "Savgood", "url": "https://www.savgood.com", "notes": "Hangzhou. SG-ZCM series. 23x-90x zoom modules."},
+  {"name": "Linovision (Hinovision)", "url": "https://linovision.com", "notes": "Zoom camera modules 4x-90x. Network block cameras."},
+  {"name": "YXF Camera", "url": "https://www.yxfcamera.com", "notes": "OEM camera modules. 20x optical zoom. USB/HDMI. Shenzhen."},
+  {"name": "Huanyu (Univision)", "url": "https://www.unviot.com", "notes": "UAV zoom modules. 4MP 10x, 2MP 26x. OIS drone camera modules."},
+  {"name": "VA Imaging", "url": "https://va-imaging.com", "notes": "2MP 10x autofocus zoom MIPI camera for Raspberry Pi."},
+  {"name": "iShot / InterTest", "url": "https://intertest.com", "notes": "XBlock XBC-KZ36G (36x), XBC-KZ10 (10x). Also distributes Sony FCB, KT&C."},
+  {"name": "Dahua", "url": "https://www.dahuasecurity.com", "notes": "Makes zoom camera modules/cores for OEM."},
+  {"name": "Hikvision", "url": "https://www.hikvision.com", "notes": "Makes zoom camera modules/cores for OEM."},
+  {"name": "Sinoseen", "url": "https://www.sinoseen.com", "notes": "OEM USB camera module with optical zoom."},
+  {"name": "Z3 Technology", "url": "https://intertest.com/collections/z3-technology", "notes": "IP video encoder solutions/boards for block cameras."}
+]

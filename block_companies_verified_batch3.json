@@ -1,0 +1,47 @@
+[
+  {
+    "company_name": "InterTest / iShot",
+    "headquarters_country": "US",
+    "company_type": "distributor",
+    "makes_zoom_block_cameras": true,
+    "makes_near_miss_zoom": true,
+    "website": "https://intertest.com",
+    "notes": "Founded 1981, headquartered in Columbia, NJ. Primarily a distributor and integrator — authorized Sony FCB distributor and integrator, also distributes KT&C and Z3 Technology products. However, they also manufacture their own iShot XBlock-branded zoom block cameras: XBC-KZ36G (36x), XBC-KZ33-A (33x), XBC-KZ10 (10x). XBlock cameras integrate Sony or iShot block cameras into housings with video output interfaces. The XBC-KZ10 (10x) and XBC-KZ36G (36x) qualify as zoom block cameras in the 10x-40x range. Company straddles manufacturer and distributor roles — they design/assemble their own branded block cameras while also reselling third-party products."
+  },
+  {
+    "company_name": "Dahua",
+    "headquarters_country": "CN",
+    "company_type": "manufacturer",
+    "makes_zoom_block_cameras": true,
+    "makes_near_miss_zoom": false,
+    "website": "https://www.dahuasecurity.com",
+    "notes": "Zhejiang Dahua Technology Co., Ltd., headquartered in Hangzhou, China. Major CCTV/security manufacturer. Produces zoom block camera modules including the CA-HZ2030T (30x optical zoom, 2MP, 1/2.8\" CMOS, 4.3-129mm). This appears to be a bare zoom module for OEM integration into PTZ and other camera systems. The CA-HZ2030T is listed as discontinued by at least one distributor, and Dahua's current product pages focus on complete camera systems rather than bare modules. Block camera module line appears limited compared to Sony/Hikvision."
+  },
+  {
+    "company_name": "Hikvision",
+    "headquarters_country": "CN",
+    "company_type": "manufacturer",
+    "makes_zoom_block_cameras": true,
+    "makes_near_miss_zoom": true,
+    "website": "https://www.hikvision.com",
+    "notes": "Hangzhou Hikvision Digital Technology Co., Ltd., headquartered in Hangzhou, China. World's largest video surveillance manufacturer. Produces a full DS-2ZMN series of bare zoom camera modules: DS-2ZMN4007(C) (40x, 2MP, 7-280mm), DS-2ZMN3012(C) (30x, 8MP), DS-2ZMN2507(C) (25x, 2MP), DS-2ZMN2007 (20x). Also offers 4x model per user manuals. Modules use 36-pin FPC interface, 12VDC, CVBS/LVDS output. The 20x-40x models qualify for makes_zoom_block_cameras. The 4x model qualifies for near_miss_zoom. Active product line with current datasheets available. Also related: HikRobot (subsidiary) makes HD Zoom Camera Modules."
+  },
+  {
+    "company_name": "Sinoseen",
+    "headquarters_country": "CN",
+    "company_type": "OEM_supplier",
+    "makes_zoom_block_cameras": false,
+    "makes_near_miss_zoom": true,
+    "website": "https://www.sinoseen.com",
+    "notes": "Shenzhen Sinoseen Technology Co., Ltd., headquartered in Shenzhen, Guangdong, China. Established ~2016. OEM/ODM camera module manufacturer specializing in USB/MIPI/DVP camera modules. Their optical zoom offerings are limited: 3x and 5x optical zoom USB camera modules (8MP, Sony IMX415/IMX317 sensors). These are small-format camera modules, NOT traditional zoom block cameras in the Sony FCB style. The 3x-5x zoom range qualifies for near_miss_zoom (4x-9x category) but they do not make anything in the 10x-40x range. Different market segment from traditional block cameras."
+  },
+  {
+    "company_name": "Z3 Technology",
+    "headquarters_country": "US",
+    "company_type": "manufacturer",
+    "makes_zoom_block_cameras": false,
+    "makes_near_miss_zoom": false,
+    "website": "https://z3technology.com",
+    "notes": "Z3 Technology, LLC, headquartered in Lincoln, Nebraska, USA (100 N 8th St, Ste 250). Also has engineering office in Chicago, IL. Z3 does NOT manufacture zoom block cameras — they manufacture IP video encoder boards and complete IP camera solutions that work WITH block cameras (primarily Sony FCB series). Products include Q603 series encoders, Q605 series encoders, ZCube encoders, and Z3Cam complete camera assemblies that pair their encoders with Sony FCB blocks. They are a complementary technology provider, not a block camera manufacturer. Distributed through InterTest. NDAA/TAA compliant."
+  }
+]

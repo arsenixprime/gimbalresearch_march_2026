@@ -1,0 +1,59 @@
+{
+  "manufacturer": "Zhejiang Dahua Technology Co., Ltd.",
+  "manufacturer_url": "https://www.dahuasecurity.com",
+  "location": "Hangzhou, China",
+  "products": [
+    {
+      "product_name": "Dahua 2MP 30x Zoom Block Camera Module",
+      "model_number": "CA-HZ2030T",
+      "optical_zoom": 30,
+      "digital_zoom_max": 16,
+      "total_zoom_combined": 480,
+      "focal_length_range_mm": "4.3-129",
+      "sensor_type": "CMOS",
+      "sensor_size": "1/2.8\"",
+      "megapixels": 2.0,
+      "max_photo_resolution": "1920x1080",
+      "max_video_resolution": "1920x1080@25/30fps",
+      "has_night_vision": true,
+      "has_thermal": false,
+      "stabilization_type": "none",
+      "stabilization_notes": "No OIS or EIS mentioned in specifications",
+      "weight_g": 270,
+      "dimensions_mm": "91.2x60x50",
+      "video_output_interfaces": ["Digital video (proprietary)"],
+      "control_interface": ["RS-232"],
+      "control_protocol": "Sony VISCA protocol, Dahua communication interface",
+      "power_consumption_w": 4.5,
+      "voltage_input": "9-12V DC (12V DC recommended)",
+      "operating_temp_range": "-10C to +60C",
+      "ip_rating": null,
+      "autofocus": "Autofocus with autoiris",
+      "price_usd": null,
+      "price_source": null,
+      "availability": "Discontinued (listed as discontinued on orbitadigital.com)",
+      "product_url": "https://www.dahuasecurity.com/Products",
+      "data_sources": [
+        "https://www.orbitadigital.com/en/discontinued/11092-dahua-ca-hz2030t-ca-hz2030t.html",
+        "https://www.sevecu.com/accesories/lenses/ca-hz2030t-detail",
+        "https://www.yoycart.com/Product/545033856530/"
+      ],
+      "notable_features": [
+        "30x optical zoom in compact form factor",
+        "270g lightweight design",
+        "Sony VISCA protocol compatible",
+        "ICR filter for day/night operation",
+        "Minimum illumination 0.05/0.005 lux",
+        "AWB, AGC, BLC, 2D/3D-NR, privacy mask",
+        "Minimum focus distance 100-1000mm",
+        "Zoom speed: 4 seconds",
+        "RS-232 baud rates: 9600/19200/38400bps",
+        "Max power 6W"
+      ],
+      "meets_criteria": true,
+      "near_miss": false,
+      "near_miss_reason": null
+    }
+  ],
+  "research_gaps": "Dahua's block camera product line appears very limited - primarily the CA-HZ2030T which is now discontinued. The video output interface description is vague ('digital video') and likely refers to an analog or LVDS output rather than IP/Ethernet. Dahua's current product focus is on complete PTZ cameras rather than standalone block/zoom modules. Operating humidity specified as 20-80%."
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "company": "Active Silicon",
+    "headquarters_country": "GB",
+    "company_type": "OEM_supplier",
+    "makes_zoom_block_cameras": false,
+    "makes_near_miss_zoom": false,
+    "website": "https://www.activesilicon.com",
+    "notes": "Active Silicon (Iver, UK) does NOT manufacture zoom block cameras. They design Harrier interface boards that adapt existing Sony FCB and Tamron block cameras to USB3, 10GigE, and other interfaces. They are an accessory/integration supplier, not a camera manufacturer. No proprietary zoom optics."
+  },
+  {
+    "company": "Savgood",
+    "headquarters_country": "CN",
+    "company_type": "manufacturer",
+    "makes_zoom_block_cameras": true,
+    "makes_near_miss_zoom": true,
+    "website": "https://www.savgood.com",
+    "notes": "Savgood (Hangzhou, China) manufactures the SG-ZCM series zoom block camera modules. Their range spans from approximately 20x to 90x optical zoom, covering both the 10x-40x qualifying range and the 41x+ near-miss range. They are a genuine OEM manufacturer of zoom block cameras with their own lens assemblies and sensors. Products include models with Starvis sensors and various output interfaces (LVDS, HDMI, IP)."
+  },
+  {
+    "company": "Linovision",
+    "headquarters_country": "CN",
+    "company_type": "distributor",
+    "makes_zoom_block_cameras": false,
+    "makes_near_miss_zoom": false,
+    "website": "https://linovision.com",
+    "notes": "Linovision (also marketed as Hinovision) appears to be primarily a reseller/distributor of security and surveillance products rather than an original manufacturer of zoom block camera modules. They list zoom modules sourced from other OEMs. Based in China. Not a primary block camera manufacturer."
+  },
+  {
+    "company": "YXF Camera",
+    "headquarters_country": "CN",
+    "company_type": "OEM_supplier",
+    "makes_zoom_block_cameras": true,
+    "makes_near_miss_zoom": true,
+    "website": "https://www.yxfcamera.com",
+    "notes": "YXF Camera (Shenzhen, China) is an OEM zoom module manufacturer. They produce zoom block camera modules across a range of zoom levels including 10x, 20x, 30x, and higher. They serve the drone/UAV and security integration market. Products include both SDI and network output modules. Qualifies in the 10x-40x range with some models also in near-miss territory."
+  },
+  {
+    "company": "Huanyu (Univision)",
+    "headquarters_country": "CN",
+    "company_type": "manufacturer",
+    "makes_zoom_block_cameras": true,
+    "makes_near_miss_zoom": false,
+    "website": "https://www.unviot.com",
+    "notes": "Huanyu/Univision (China) manufactures zoom camera modules targeted at UAV/drone integration. They offer modules with optical image stabilization (OIS) and zoom ranges in the 10x-30x range. They appear to be a genuine manufacturer focused on the drone payload and embedded vision market."
+  },
+  {
+    "company": "VA Imaging",
+    "headquarters_country": "GB",
+    "company_type": "manufacturer",
+    "makes_zoom_block_cameras": true,
+    "makes_near_miss_zoom": false,
+    "website": "https://va-imaging.com",
+    "notes": "VA Imaging (UK) makes compact zoom camera modules with MIPI CSI-2 output designed for embedded systems including Raspberry Pi and NVIDIA Jetson. Their key product is a 10x optical zoom module. They are a niche manufacturer at the low end of the qualifying 10x-40x range. Small company focused on embedded/maker market."
+  }
+]

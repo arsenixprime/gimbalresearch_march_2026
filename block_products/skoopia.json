@@ -1,0 +1,86 @@
+[
+  {
+    "product_name": "Skoopia 85Z18H 4K Block Camera",
+    "model_number": "85Z18H",
+    "optical_zoom": 18,
+    "digital_zoom_max": null,
+    "total_zoom_combined": null,
+    "focal_length_range_mm": null,
+    "sensor_type": "Sony STARVIS 2 IMX678 (some sources reference IMX334; may vary by revision)",
+    "sensor_size": "1/1.8\"",
+    "megapixels": 8.3,
+    "max_photo_resolution": "3840x2160",
+    "max_video_resolution": "3840x2160 (4K / Quad Full HD)",
+    "has_night_vision": null,
+    "has_thermal": false,
+    "stabilization_type": "unknown",
+    "stabilization_notes": "Not specified in available documentation.",
+    "weight_g": null,
+    "dimensions_mm": "50 x 60 x 97",
+    "video_output_interfaces": [
+      "HDMI",
+      "MIPI CSI-2 (2-lane, 720p parallel output)"
+    ],
+    "control_interface": [
+      "Serial (protocol-based)"
+    ],
+    "control_protocol": "VISCA, PELCO-D (full command set available upon request)",
+    "power_consumption_w": 6,
+    "voltage_input": "DC 7-15V",
+    "operating_temp_range": null,
+    "ip_rating": null,
+    "autofocus": true,
+    "price_usd": null,
+    "price_source": "Contact manufacturer or distributor (STEMMER IMAGING USA, Phase 1 Vision)",
+    "availability": "In production, available through distributors (STEMMER IMAGING USA, Phase 1 Vision)",
+    "product_url": "https://www.skoopia.com/industrial-block-camera",
+    "notable_features": [
+      "Direct replacement for Sony FCB-ER8550 4K block cameras",
+      "VISCA-compliant for drop-in replacement of Sony FCB modules",
+      "Meets existing Full HD block camera dimensions for easy retrofit",
+      "1/1.8\" Sony STARVIS 2 sensor for excellent low-light performance",
+      "Parallel MIPI CSI-2 output alongside HDMI",
+      "Designed for long product lifecycle (industrial/medical use)",
+      "Superior optics with lower aberration"
+    ],
+    "meets_criteria": true,
+    "near_miss": false,
+    "near_miss_reason": null,
+    "_data_confidence": {
+      "high_confidence": [
+        "model_number",
+        "optical_zoom",
+        "sensor_size",
+        "max_video_resolution",
+        "video_output_interfaces",
+        "control_protocol"
+      ],
+      "medium_confidence": [
+        "sensor_type",
+        "megapixels",
+        "dimensions_mm",
+        "power_consumption_w",
+        "voltage_input"
+      ],
+      "low_confidence_or_not_found": [
+        "digital_zoom_max",
+        "focal_length_range_mm",
+        "weight_g",
+        "stabilization_type",
+        "has_night_vision",
+        "operating_temp_range",
+        "ip_rating",
+        "price_usd",
+        "max_photo_resolution"
+      ],
+      "notes": "Skoopia publishes limited public specifications online. Many details require direct inquiry to the manufacturer or distributor. The sensor may be IMX678 (STARVIS 2) or IMX334 depending on product revision; both are referenced in different sources.",
+      "sources_consulted": [
+        "https://www.skoopia.com/industrial-block-camera",
+        "https://www.skoopia.com/post/sony-block-camera-replacement",
+        "https://www.stemmer-imagingusa.com/cameras/skoopia/block",
+        "https://www.phase1vision.com/cameras/skoopia/block",
+        "https://www.skoopia.com/post/mipi-block-cameras-ai-block-camera"
+      ]
+    }
+  }
+]

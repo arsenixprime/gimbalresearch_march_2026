@@ -1,0 +1,56 @@
+[
+  {
+    "company": "Sony",
+    "headquarters_country": "JP",
+    "company_type": "manufacturer",
+    "makes_zoom_block_cameras": true,
+    "makes_near_miss_zoom": true,
+    "website": "https://pro.sony/ue_US/products/zoom-camera-blocks",
+    "notes": "Sony's FCB series is the industry-standard zoom block camera line. Models span 10x to 40x+ optical zoom (e.g. FCB-EV7520 30x, FCB-EV9500L 30x, FCB-EH6500 30x, FCB-EV7100 10x, FCB-EV7310 20x). Also makes near-miss models below 10x. URL and product line NOT live-verified; based on established knowledge."
+  },
+  {
+    "company": "Tamron",
+    "headquarters_country": "JP",
+    "company_type": "manufacturer",
+    "makes_zoom_block_cameras": true,
+    "makes_near_miss_zoom": false,
+    "website": "https://www.tamron.com/global/biz/products/ccm/",
+    "notes": "Tamron manufactures compact camera modules (CCM) for OEM/industrial use. MP3010M-EV is a 10x zoom module (~70g). Tamron is primarily known for interchangeable lenses but has an established B2B camera module division. URL NOT live-verified."
+  },
+  {
+    "company": "Viewsheen",
+    "headquarters_country": "CN",
+    "company_type": "manufacturer",
+    "makes_zoom_block_cameras": true,
+    "makes_near_miss_zoom": true,
+    "website": "https://www.viewsheen.com",
+    "notes": "Hangzhou-based manufacturer of zoom camera modules. Product range includes 10x through 90x+ optical zoom blocks for UAV, security, and industrial applications. Also offers starlight and thermal modules. URL NOT live-verified."
+  },
+  {
+    "company": "KT&C",
+    "headquarters_country": "KR",
+    "company_type": "manufacturer",
+    "makes_zoom_block_cameras": true,
+    "makes_near_miss_zoom": false,
+    "website": "https://www.intertest.com",
+    "notes": "KT&C is a South Korean camera manufacturer. The ATC-HZ series includes zoom block cameras in the 10x-40x range. Products distributed in the US via Intertest. Company status uncertain as of 2025 — may have reduced operations or shifted focus. URL NOT live-verified; company viability should be independently confirmed."
+  },
+  {
+    "company": "Videology",
+    "headquarters_country": "US",
+    "company_type": "manufacturer",
+    "makes_zoom_block_cameras": true,
+    "makes_near_miss_zoom": true,
+    "website": "https://www.videologyinc.com",
+    "notes": "US-based (Rhode Island) manufacturer of industrial imaging solutions. SCAiLX brand includes Edge AI zoom block cameras advertised with 10x-55x optical zoom range. Also makes board-level and box cameras. URL NOT live-verified."
+  },
+  {
+    "company": "Skoopia",
+    "headquarters_country": "US",
+    "company_type": "manufacturer",
+    "makes_zoom_block_cameras": true,
+    "makes_near_miss_zoom": false,
+    "website": "https://www.skoopia.com",
+    "notes": "Skoopia markets zoom block cameras including the 85Z18H (18x 4K block camera). Relatively small/niche player. Limited public information available. Company active status and whether they are a true manufacturer vs. white-label reseller is uncertain. URL NOT live-verified; recommend independent confirmation of current operations."
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {"name": "Sony", "headquarters_country": "JP", "company_type": "manufacturer", "website": "https://pro.sony/ue_US/products/zoom-camera-blocks", "notes": "FCB series. Industry standard. 10x-40x+ optical zoom."},
+  {"name": "Tamron", "headquarters_country": "JP", "company_type": "manufacturer", "website": "https://www.tamron.com/global/biz/products/ccm/", "notes": "MP3010M-EV (10x, ~70g). Ultra-compact."},
+  {"name": "Viewsheen", "headquarters_country": "CN", "company_type": "manufacturer", "website": "https://www.viewsheen.com", "notes": "Hangzhou. 10x-90x+ zoom modules. OEM/ODM."},
+  {"name": "KT&C", "headquarters_country": "KR", "company_type": "manufacturer", "website": "https://intertest.com", "notes": "South Korean. ATC-HZ series 10x-40x."},
+  {"name": "Videology", "headquarters_country": "US", "company_type": "manufacturer", "website": "https://www.videologyinc.com", "notes": "Rhode Island. SCAiLX Edge AI zoom blocks 10x-55x."},
+  {"name": "Skoopia", "headquarters_country": "US", "company_type": "manufacturer", "website": "https://www.skoopia.com", "notes": "85Z18H (18x 4K). Sony FCB replacements."},
+  {"name": "Savgood", "headquarters_country": "CN", "company_type": "manufacturer", "website": "https://www.savgood.com", "notes": "Hangzhou. SG-ZCM series 20x-90x zoom modules."},
+  {"name": "YXF Camera", "headquarters_country": "CN", "company_type": "OEM_supplier", "website": "https://www.yxfcamera.com", "notes": "Shenzhen. 10x-30x+ zoom modules."},
+  {"name": "Huanyu (Univision)", "headquarters_country": "CN", "company_type": "manufacturer", "website": "https://www.unviot.com", "notes": "UAV zoom modules with OIS. 10x-30x."},
+  {"name": "VA Imaging", "headquarters_country": "GB", "company_type": "manufacturer", "website": "https://va-imaging.com", "notes": "UK. 10x MIPI CSI-2 zoom."},
+  {"name": "InterTest / iShot", "headquarters_country": "US", "company_type": "distributor", "website": "https://intertest.com", "notes": "XBlock brand (10x, 36x). Also distributes Sony FCB, KT&C."},
+  {"name": "Dahua", "headquarters_country": "CN", "company_type": "manufacturer", "website": "https://www.dahuasecurity.com", "notes": "CA-HZ2030T (30x). Block camera line may be limited."},
+  {"name": "Hikvision", "headquarters_country": "CN", "company_type": "manufacturer", "website": "https://www.hikvision.com", "notes": "DS-2ZMN series: 20x-40x modules."}
+]
