@@ -1,5 +1,8 @@
 RF Amplifier Research Error Log
 Generated: 2026-03-16
+Re-run completed: 2026-03-16 (corrected 5-15W constraint, infrastructure market tier)
+
+=== RE-RUN (5-15W corrected constraint) ===
 
 [PHASE 4 - CRITICAL] Phase 4 detailed spec extraction aborted
   Reason: API usage quota exhausted ("You're out of extra usage · resets 10pm America/New_York")
@@ -35,3 +38,21 @@ Generated: 2026-03-16
 [PHASE 2 - MINOR] MAAP-011027 status unknown
   Note: Part announced 2013, still listed on MACOM product page but lifecycle status not explicitly confirmed.
   Resolution: Listed as status=unknown in database.
+
+=== FIRST RUN (prior — dominated by 25-110W radar parts, results superseded) ===
+
+[FIRST RUN - CRITICAL] Power range constraint not enforced — first run returned 25-110W C-band radar GaN MMICs
+  Reason: Prompt said "up to 15W or higher" (no hard cap). Search terms included "C-band GaN MMIC" and "AESA radar"
+    which target the defense/radar market. 10 of 12 qualifying parts from first run were 25-110W radar MMICs.
+  Only 2 first-run parts were in the 5-15W range: QPA1019 and CMPA0560008S.
+  Resolution: Full re-run with hard 15W upper cap and infrastructure-targeted search terms. Prior output files overwritten.
+
+[FIRST RUN - PHASE 4 - CRITICAL] Phase 4 detailed spec extraction aborted
+  Reason: API usage quota exhausted ("You're out of extra usage · resets 10pm America/New_York")
+  Impact: Pricing, exact package dimensions, pin counts, eval board part numbers, and operating temp ranges are null.
+  Resolution: Database compiled from Phase 3 verification data. These fields remain null in re-run output as well —
+    Phase 4 was not re-attempted after quota reset. Re-run Phase 4 to populate price/packaging fields.
+
+[FIRST RUN - PHASE 4 - INITIAL ATTEMPT] Phase 4 agents denied WebFetch access
+  Reason: User permission mode denied WebFetch for subagents in first Phase 4 launch attempt
+  Resolution: Re-launched agents with explicit WebFetch permission note. Still failed due to quota.

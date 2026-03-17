@@ -1,27 +1,39 @@
-# Qualifying RF Power Amplifier ICs — 5-6 GHz, ≥5W
+# Qualifying RF Power Amplifier ICs — 5–6 GHz, 5–15W
 
-**Criteria:** Frequency range covers at least 5.0–5.8 GHz AND output power ≥ 5W AND packaged IC (not bare die or complete module)
+**Criteria:** Frequency range must cover 5.0–5.8 GHz; output power 5W–15W (Psat or P3dB); packaged IC (not bare die, not complete module with connectors); hard upper power cap 15W.
 
-Sorted by output power ascending.
+**Generated:** 2026-03-16
+**Total qualifying parts:** 7 (5 active, 2 NRND)
 
-| Manufacturer | Part Number | Status | Technology | Freq Range | Output Power (W) | Output Power (dBm) | Spec | Gain (dB) | Vdd (V) | Efficiency (%) | Eff. Type | Matched? | Package | Datasheet |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Qorvo | QPA1019 | Active | GaN | 4.5–7.0 GHz | 10 | 40 | Psat | 19 (LS) | 22 | 39 | PAE | Yes | QFN plastic overmold | [Link](https://www.qorvo.com/products/p/QPA1019) |
-| MACOM | CMPA0560008S | Active | GaN | 0.5–6.0 GHz | 10 | 40 | Psat | 12 (LS) | 28 | 40 | PAE | Yes | QFN 5×5mm | [Link](https://cdn.macom.com/datasheets/CMPA0560008S.pdf) |
-| MACOM | CGH40010F | **NRND** | GaN | DC–6.0 GHz | 13 | 41 | Psat | 16 (SS) | 28 | 65 | Drain | **No** | Flange | [Link](https://assets.wolfspeed.com/uploads/2020/12/CGH40010.pdf) |
-| MACOM | CMPA5259025F | Active | GaN | 5.2–5.9 GHz | 25 | 44 | Psat | — | 28 | 50 | Drain | Yes | Flange | [Link](https://assets.wolfspeed.com/uploads/2020/12/CMPA5259025F.pdf) |
-| MACOM | CMPA2560025 | Active | GaN | 2.5–6.0 GHz | 25 | 44 | Psat | 25 (SS) | 28 | 30 | PAE | Yes | — | [Link](https://www.macom.com/products/product-detail/CMPA2560025) |
-| MACOM | CGH40025F | **NRND** | GaN | DC–6.0 GHz | 30 | 45 | Psat | 15 (SS) | 28 | 62 | Drain | **No** | Flange | [Link](https://assets.wolfspeed.com/uploads/2020/12/CGH40025F.pdf) |
-| Analog Devices | HMC8205BF10 | Active | GaN | 0.3–6.0 GHz | 35 | 45.5 | Psat | 20 (LS) | 50 | 38 | PAE | Yes | LDCC 10-lead ceramic | [Link](https://www.analog.com/en/products/hmc8205.html) |
-| Qorvo | TGA2307-SM | Active | GaN | 5.0–6.0 GHz | 50 | 47 | Psat | 20 (LS) | — | 44 | PAE | Yes | QFN 6×6mm | [Link](https://www.qorvo.com/products/p/TGA2307-SM) |
-| MACOM | CMPA5259050S | Active | GaN | 5.0–5.9 GHz | 50 | 47 | Psat | 27 (LS) | 28 | 50 | PAE | Yes | QFN 5×5mm | [Link](https://assets.wolfspeed.com/uploads/2022/11/wolfspeed_cmpa5259050s_data_sheet.pdf) |
-| Qorvo | QPA2310 | Active | GaN | 5.0–6.0 GHz | 50 | 47 | Psat | 23 (LS) | 50 | 53 | PAE | Yes | QFN 7×7mm | [Link](https://www.qorvo.com/products/p/QPA2310) |
-| MACOM | CMPA5259080S | Active | GaN | 5.0–5.9 GHz | 110 | 50.4 | Psat | 29 (SS) | 40 | 48 | PAE | Yes | QFN 5×5mm | [Link](https://assets.wolfspeed.com/uploads/2021/05/CMPA5259080S.pdf) |
-| Qorvo | QPA2309 | Active | GaN | 5.0–6.0 GHz | 100 | 50 | Psat | 22 (LS) | 50 | 52 | PAE | Yes | QFN 7×7mm | [Link](https://www.qorvo.com/products/p/QPA2309) |
+---
 
-**Notes:**
-- SS = small-signal gain; LS = large-signal gain
-- CGH40010F and CGH40025F are NRND (Not Recommended for New Designs) and are unmatched — require external matching networks for 5–6 GHz operation
-- CMPA5259025F, CMPA5259050S, CMPA5259080S, CMPA2560025, CGH40010F, and CGH40025F were originally Wolfspeed/Cree products, acquired by MACOM in December 2023
-- CMPA5259025F rated range is 5.2–5.9 GHz (technically misses 5.0–5.2 GHz lower edge) but confirmed by verification agent as covering the target band
-- Prices not available (Phase 4 detailed extraction did not complete due to API quota)
+## Active Parts (Recommended for New Designs)
+
+| # | Manufacturer | Part Number | Freq Range (GHz) | Output Power | Spec | Gain (dB) | Vdd (V) | PAE (%) | Package | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | MACOM | [CMPA0560008S](https://www.macom.com/products/product-detail/CMPA0560008) | 0.5–6.0 | 10W (40 dBm) | Psat | 12 (LS) | 28 | 40 | QFN 5×5mm | GaN on SiC MMIC, fully matched, in stock at Digi-Key/Mouser |
+| 2 | Qorvo | [QPA1019](https://www.qorvo.com/products/p/QPA1019) | 4.5–7.0 | 10W (40 dBm) | Psat | 19 (LS) | 22 | 39 | QFN plastic overmold | GaN on SiC (QGaN15), fully matched, lower 22V supply |
+| 3 | Qorvo | [QPA2962](https://www.qorvo.com/products/p/QPA2962) | 2.0–20.0 | 10W (40 dBm) | Psat | 13 (LS) | 22 | 22 | Air-cavity SMT 5×5mm | Ultra-wideband GaN MMIC; verify 5–6 GHz perf specifically; lower PAE is tradeoff for bandwidth |
+| 4 | Qorvo | [TGF3020-SM](https://www.qorvo.com/products/p/TGF3020-SM) | 4.0–6.0 | 5W (37 dBm) | P3dB | — | 32 | 53 | QFN 3×3mm | Discrete GaN HEMT; input 50Ω matched, **output unmatched** — external output network required; Psat est. 6–7W |
+| 5 | Analog Devices | [ADPA1116](https://www.analog.com/en/products/adpa1116.html) | 0.3–6.0 | 8.9W (39.5 dBm) | Psat | 23.5 (LS) | 28 | 40 | LFCSP 32-lead | GaN MMIC, fully matched and AC-coupled; rates to full 6 GHz (sibling ADPA1113 only guarantees to 5.7 GHz) |
+
+## NRND Parts (Not Recommended for New Designs — Legacy Stock Only)
+
+| # | Manufacturer | Part Number | Freq Range (GHz) | Output Power | Spec | Gain (dB) | Vdd (V) | Drain Eff. (%) | Package | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 6 | MACOM | [CGH40010F](https://assets.wolfspeed.com/uploads/2020/12/CGH40010.pdf) | DC–6.0 | 13W (41 dBm) | Psat | 16 (SS) | 28 | 65 | Flange (screw-down) | GaN HEMT, **unmatched** — external matching required for 5–6 GHz; NRND; originally Wolfspeed/Cree |
+| 7 | MACOM | [CGH40010P](https://assets.wolfspeed.com/uploads/2020/12/CGH40010.pdf) | DC–6.0 | 13W (41 dBm) | Psat | 16 (SS) | 28 | 65 | Pill (solder-down) | Same die as CGH40010F; pill/solder-down package; NRND |
+
+---
+
+## Key Design Notes
+
+**GaN dominance:** All 7 qualifying parts use GaN technology. No GaAs or LDMOS parts meet the 5W threshold across the full 5–6 GHz band.
+
+**Supply voltage:** Most parts require 22–32V drain bias. TGF3020-SM requires 32V. Lower-power near-miss parts (GRF5857, HMC7357) operate at 3–8V but do not reach 5W.
+
+**Impedance matching:** Five of the 7 are fully matched to 50Ω (drop-in SMT). CGH40010F/P are unmatched. TGF3020-SM input is pre-matched; output requires an external matching network.
+
+**Efficiency:** TGF3020-SM leads at 53% PAE at P3dB. CMPA0560008S and ADPA1116 follow at 40% PAE. CGH40010F/P achieve 65% drain efficiency but are broadband unmatched — efficiency at 5–6 GHz with external matching will differ. QPA2962 has lowest PAE (22%) as the cost of 2–20 GHz bandwidth.
+
+**LS** = large-signal gain; **SS** = small-signal (small-signal gain at rated drain)

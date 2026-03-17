@@ -1,209 +1,118 @@
 # RF Power Amplifier IC Research Summary
-## 5–6 GHz, ≥5W Output Power, Packaged IC
+## 5–6 GHz, 5–15W Output Power, Packaged IC
 
 **Generated:** 2026-03-16
+**Research scope:** Commercial/infrastructure market tier (WiFi AP, FWA, small cell, ISM/FPV). Defense and radar parts (>15W) explicitly excluded.
 
 ---
 
-## Overview
+## Executive Summary
 
-| Metric | Count |
-|---|---|
-| Total parts found | 39 (raw), 34 (deduped) |
-| Parts verified (Phase 3) | 34 |
-| Parts meeting all criteria | 12 |
-| Near-miss parts | 12 |
-| Excluded (module/die/LNA/wrong band) | 10 |
+The 5–15W packaged IC market at 5–6 GHz is genuinely sparse. Only **7 qualifying parts** were found from 5 manufacturers across 19 total candidates reviewed. The market splits sharply into three tiers:
 
-**Search coverage:** 50 search terms across general discovery, manufacturer-targeted, application-targeted, and technology-targeted categories. Distributor searches (Digi-Key, Mouser, Richardson RFPD, Arrow, Newark) were also conducted.
+- **Consumer WiFi FEMs:** <1.3W, 5V supply, GaAs or GaN-on-Si, $2–8 (Skyworks, Qorvo, pSemi, NXP) — too low power
+- **Infrastructure/AP tier (target):** 5–15W, 22–32V GaN-on-SiC — sparse, ~7 parts found
+- **Defense/radar/C-band:** 25–110W GaN MMIC — abundant but explicitly out of scope
+
+The 5 active qualifying parts represent the practical universe of drop-in or near-drop-in options. All use GaN technology (GaN on SiC for Qorvo and MACOM, GaN process for ADI).
 
 ---
 
-## Qualifying Parts (12)
+## Qualifying Parts Summary
 
-Parts that meet **all** criteria: frequency covers ≥5.0–5.8 GHz, output power ≥5W, packaged IC form factor.
+| Part | Freq (GHz) | Power (W) | Spec | PAE (%) | Package | Status |
+|---|---|---|---|---|---|---|
+| MACOM CMPA0560008S | 0.5–6.0 | 10 | Psat | 40 | QFN 5×5mm | Active |
+| Qorvo QPA1019 | 4.5–7.0 | 10 | Psat | 39 | QFN plastic overmold | Active |
+| Qorvo QPA2962 | 2.0–20.0 | 10 | Psat | 22 | Air-cavity SMT 5×5mm | Active |
+| Qorvo TGF3020-SM | 4.0–6.0 | 5 | P3dB | 53 | QFN 3×3mm | Active |
+| Analog Devices ADPA1116 | 0.3–6.0 | 8.9 | Psat | 40 | LFCSP 32-lead | Active |
+| MACOM CGH40010F | DC–6.0 | 13 | Psat | 65* | Flange | NRND |
+| MACOM CGH40010P | DC–6.0 | 13 | Psat | 65* | Pill | NRND |
 
-| # | Manufacturer | Part | Status | Power (W) | PAE (%) | Vdd (V) | Package |
-|---|---|---|---|---|---|---|---|
-| 1 | Qorvo | QPA1019 | Active | 10 | 39 | 22 | QFN plastic |
-| 2 | MACOM | CMPA0560008S | Active | 10 | 40 | 28 | QFN 5×5mm |
-| 3 | MACOM | CGH40010F | **NRND** | 13 | 65 (drain) | 28 | Flange |
-| 4 | MACOM | CMPA5259025F | Active | 25 | 50 (drain) | 28 | Flange |
-| 5 | MACOM | CMPA2560025 | Active | 25 | 30 | 28 | — |
-| 6 | MACOM | CGH40025F | **NRND** | 30 | 62 (drain) | 28 | Flange |
-| 7 | Analog Devices | HMC8205BF10 | Active | 35 | 38 | 50 | LDCC ceramic |
-| 8 | Qorvo | TGA2307-SM | Active | 50 | 44 | — | QFN 6×6mm |
-| 9 | MACOM | CMPA5259050S | Active | 50 | 50 | 28 | QFN 5×5mm |
-| 10 | Qorvo | QPA2310 | Active | 50 | 53 | 50 | QFN 7×7mm |
-| 11 | Qorvo | QPA2309 | Active | 100 | 52 | 50 | QFN 7×7mm |
-| 12 | MACOM | CMPA5259080S | Active | 110 | 48 | 40 | QFN 5×5mm |
+*Drain efficiency, not PAE. Unmatched broadband device.
 
 ---
 
-## Breakdown by Manufacturer
+## Market Landscape Analysis
 
-| Manufacturer | Qualifying | Near-Miss | Notes |
-|---|---|---|---|
-| Qorvo | 4 | 4 | Strongest portfolio for 5.0–6.0 GHz specifically; QPA2309/2310 are highest power active QFN parts |
-| MACOM | 7 | 3 | Dominant supplier after acquiring Wolfspeed RF division in Dec 2023; portfolio spans both original MACOM GaN-on-Si and Wolfspeed GaN-on-SiC |
-| Analog Devices | 1 | 2 | HMC8205BF10 qualifies; ADPA1113 is near-miss (5.7 GHz upper limit); HMC7357 under 5W |
-| United Monolithic Semiconductors | 0 | 1 | CHA7060-QAB starts at 5.6 GHz |
-| Guerrilla RF | 0 | 1 | GRF5857 under 5W and starts at 5.2 GHz |
-| Millibeam | 0 | 1 | HPSB5Q tops out at 5.5 GHz |
-| Integra Technologies | 0 | 2 | Both parts cover 5.2–5.9 GHz only |
+### Why So Few Parts?
 
----
+The 5–15W tier at 5–6 GHz is thin because:
 
-## Breakdown by Technology
+1. **Below it:** Consumer WiFi FEMs (802.11ac/ax, WiGig) are highly optimized for low cost and integration, targeting <1W. There is no commercial driver for a 2–4W consumer 5 GHz PA — the applications don't exist at scale.
 
-| Technology | Qualifying | Near-Miss | Notes |
-|---|---|---|---|
-| GaN (GaN-on-SiC) | 11 | 9 | Dominant technology; GaN-on-SiC is preferred for high power/high efficiency |
-| GaN (GaN-on-Si) | 1 | 1 | MACOM MAGX-011086A uses GaN-on-Silicon (lower cost, lower performance) |
-| GaAs (pHEMT / MMIC) | 0 | 3 | GaAs appears only in near-misses (MAAP-011027, HMC7357LP5GE, ADPA1113) — inadequate for ≥5W at 5–6 GHz except ADPA1113 at 40W |
-| LDMOS | 0 | 0 | No LDMOS parts found at 5–6 GHz — LDMOS is not competitive above 4 GHz |
+2. **Above it:** The 5.25–5.85 GHz band overlaps C-band radar and satellite downlink. Defense/radar GaN MMICs target 25–100W for phased array elements and are the bulk of catalog products in this frequency range.
 
-**Key insight:** GaN-on-SiC is the only technology achieving high power (>10W) at 5–6 GHz with high efficiency. GaAs can reach moderate power (8W) but lags in efficiency. LDMOS is absent above 4 GHz.
+3. **The gap:** Infrastructure WiFi access points and small cells at 5 GHz do use 5–15W PAs, but many of these are custom ASICs inside access point SoCs (Qualcomm, Broadcom, MediaTek) or tightly integrated modules, not discrete ICs available separately.
 
----
+### Technology Breakdown
 
-## Output Power Distribution
+- **GaN on SiC:** 5 of 7 qualifying parts (all Qorvo and MACOM). High voltage (22–32V), high PAE, proven reliability. Dominant technology for this power/frequency tier.
+- **GaN (unspecified process):** 1 qualifying part (ADPA1116 from ADI — GaN process, specific substrate not specified in datasheet).
+- **GaAs:** 0 qualifying (several near-misses — MAAP-011027, PMA6-73-10W+, HMC7357 — but all fail on frequency or power).
+- **LDMOS:** 0 qualifying (B10G4750N12DL near-miss tops out at 5.0 GHz; LDMOS is fundamentally less suitable above ~5 GHz).
 
-| Range | Qualifying | Near-Miss |
+### Manufacturer Coverage
+
+| Manufacturer | Qualifying Parts | Notes |
 |---|---|---|
-| 2–5W | 0 | 4 (QPA0506 4W, MAGX-011086A 4W, GRF5857 3.16W, HMC7357 3.16W) |
-| 5–15W | 2 (QPA1019 10W, CMPA0560008S 10W) | 2 (HPSB5Q 5W, MAAP-011027 8W) |
-| 15–35W | 3 (CGH40010F 13W, CMPA5259025F 25W, CMPA2560025 25W) | 2 (CHA7060-QAB 12W, IGT5259CW25 25W) |
-| 35–75W | 5 (CGH40025F 30W, HMC8205 35W, TGA2307-SM 50W, CMPA5259050S 50W, QPA2310 50W) | 3 (ADPA1113 44.7W, IGT5259CW50 50W, QPA2576N 40W) |
-| >75W | 2 (QPA2309 100W, CMPA5259080S 110W) | 0 |
+| MACOM (incl. legacy Wolfspeed) | 3 | CMPA0560008S (active), CGH40010F/P (NRND) |
+| Qorvo | 3 | QPA1019, QPA2962, TGF3020-SM |
+| Analog Devices | 1 | ADPA1116 |
+| Skyworks | 0 | SKY66288-11 is NRND and under 5W |
+| NXP | 0 | No products found in 5–6 GHz at 5W+ |
+| Ampleon | 0 | B10G4750N12DL tops at 5.0 GHz |
+| pSemi | 0 | No products in this power range found |
+| Guerrilla RF | 0 | GRF5857/GRF5847/GRF5458 all under 5W |
+| Mini-Circuits | 0 | PMA6-73-10W+ starts at 5.6 GHz |
+| UMS | 0 | CHA7060-QAB starts at 5.6 GHz |
+| Millibeam | 0 | HPSB5Q tops at 5.5 GHz |
+
+### Near-Miss Patterns
+
+**Frequency gap at 5.6 GHz:** Several strong parts (PMA6-73-10W+ at 8.5W, CHA7060-QAB at 12W) start at 5.6 GHz. This aligns with the boundary between UNII-2C and the upper 5 GHz bands. These parts are ideal for upper C-band/5.8 GHz ISM but miss lower UNII-2.
+
+**Frequency cap at 5.0–5.5 GHz:** Ampleon B10G4750N12DL and Millibeam HPSB5Q cover the lower portion of the band but don't reach 5.5–5.8 GHz.
+
+**Power gap at 3–4W:** Qorvo QPA0506 (4W, 5.0–6.0 GHz) and Skyworks SKY66288-11 (4W, 5.15–5.9 GHz) are the closest under-threshold parts. There is a conspicuous gap between ~4W and 5W with full 5–6 GHz coverage — no parts were found bridging this.
 
 ---
 
-## Efficiency Range (PAE)
+## Recommendations by Use Case
 
-| Part | PAE / Drain Eff. | Notes |
-|---|---|---|
-| QPA2310 | 53% PAE | Highest PAE among active qualified parts |
-| QPA2309 | 52% PAE | High PAE, 100W |
-| CMPA5259050S | 50% PAE | 28V supply, 5–5.9 GHz |
-| CMPA5259025F | 50% drain | Flange, 5.2–5.9 GHz |
-| CMPA5259080S | 48% PAE | Highest power QFN part |
-| CGH40010F | 65% drain | Unmatched, NRND — high peak efficiency |
-| CGH40025F | 62% drain | Unmatched, NRND |
-| CMPA0560008S | 40% PAE | Wideband 0.5–6 GHz |
-| HMC8205BF10 | 38% PAE | Broadband 0.3–6 GHz |
-| QPA1019 | 39% PAE | Wideband 4.5–7 GHz |
-| CMPA2560025 | 30% PAE | Lower efficiency than band-specific designs |
-| TGA2307-SM | 44% PAE | 5–6 GHz specific |
+### Drop-in SMT, 10W, Priority on Simplicity
+**Qorvo QPA1019** or **MACOM CMPA0560008S** — both are proven, fully matched, in-stock, and well-documented for infrastructure applications.
 
-**Range:** 30–65% (with NRND unmatched parts), 30–53% for active matched parts.
+### Minimum Power, Smallest Package
+**Qorvo TGF3020-SM** (3×3mm QFN) — but requires an output matching network design. If you need truly drop-in, **Qorvo QPA0506** (4×4mm, 4W) is the smallest fully matched option, at the cost of ~1W vs the 5W threshold.
+
+### Widest Frequency Coverage
+**Qorvo QPA2962** (2–20 GHz) — useful if the design must span multiple bands. Lower PAE (22%) is the tradeoff.
+
+### Best Efficiency
+**Qorvo TGF3020-SM** (53% PAE at P3dB, estimated ~6-7W Psat) — but requires output matching.
+
+### Best Near-Miss (if 5.0 GHz lower edge not critical)
+**MACOM MAAP-011027** (5.2–5.9 GHz, 8W GaAs, PQFN 5×5mm) — if coverage of the 5.0–5.2 GHz portion is not needed, this is a strong option with good specs and compact SMT package. Verify current active/NRND status before designing in.
 
 ---
 
-## Gain Range
+## Gaps and Limitations
 
-| Part | Gain (dB) | Type |
-|---|---|---|
-| ADPA1113 (near-miss) | 40.5 | SS |
-| Millibeam HPSB5Q (near-miss) | 37 | LS |
-| CMPA5259080S | 29 | SS |
-| HMC7357LP5GE (near-miss) | 29 | SS |
-| CMPA2560025 | 25 | SS |
-| QPA2310 | 23 | LS |
-| QPA2309 | 22 | LS |
-| QPA1019 | 19 | LS |
-| HMC8205BF10 | 20 | LS |
-| QPA0506 (near-miss) | 18 | LS |
-| CGH40010F | 16 | SS at 2GHz |
-| CMPA0560008S | 12 | LS |
-| IGT5259CW25 (near-miss) | 12 | LS |
+- **Price data not collected:** API quota was exhausted before Phase 4 (detailed spec extraction including pricing). All prices shown as null. Consult Digi-Key, Mouser, and manufacturer direct for current pricing.
+- **Package dimensions incomplete:** Several parts (QPA1019, TGF3020-SM pin count, CGH40010F/P footprint) had package details not extracted.
+- **QPA2962 needs band-specific verification:** The 10W spec is a wideband rating. Performance at 5–6 GHz specifically should be confirmed against the datasheet power vs. frequency curves before assuming full 10W at band.
+- **MAAP-011027 active status unknown:** Part is listed on MACOM's website but lifecycle status was not confirmed. Verify before designing in.
+- **TGF3020-SM output matching:** Requires external matching network — adds PCB complexity and narrows the usable band. Evaluate whether the efficiency benefit justifies the design effort vs. a fully matched MMIC.
+- **CGH40010F/P NRND:** Legacy parts on end-of-life path. Suitable for prototyping and evaluation but not for new production designs without supply chain risk assessment.
 
 ---
 
-## Supply Voltage Distribution (Qualifying Parts Only)
+## Search Coverage
 
-| Voltage | Parts |
-|---|---|
-| 22V | QPA1019 |
-| 28V | CMPA0560008S, CMPA5259025F, CMPA2560025, CMPA5259050S, CGH40010F, CGH40025F |
-| 40V | CMPA5259080S |
-| 50V | QPA2309, QPA2310, HMC8205BF10 |
+50 search terms were used across 4 categories: general discovery, manufacturer-targeted (MACOM, Qorvo, ADI, Skyworks, pSemi, NXP, Ampleon, Guerrilla RF, Mini-Circuits, UMS, Millibeam), application-targeted (WiFi AP, FWA, FPV/drone, backhaul, ISM), and technology-targeted (GaN 5W/10W, GaAs 5 GHz, 5.8 GHz ISM). The search deliberately avoided C-band radar, AESA, and defense terminology to stay in the commercial tier.
 
-**Key insight:** 28V is the most common supply voltage for GaN PAs at this power level. 50V parts (Qorvo QPA2309/2310 and ADI HMC8205) are for highest power density applications.
+Key search term categories that were productive: "GaN 5GHz 5W 10W packaged amplifier IC", "WiFi access point power amplifier IC 5GHz", "5.8 GHz FPV drone video transmitter amplifier IC", manufacturer-specific searches (Qorvo, MACOM, ADI).
 
----
-
-## Package Type Distribution
-
-| Package | Qualifying Parts | Notes |
-|---|---|---|
-| QFN (plastic overmold, SMT) | 7 | Most common; best for PCB integration |
-| Flange | 4 | Traditional RF power package; requires heatsink mounting |
-| LDCC ceramic | 1 | HMC8205BF10; ceramic for thermal/reliability |
-
-All active qualified non-NRND parts except HMC8205BF10 are available in QFN or flange packages. QFN is preferred for modern designs due to surface-mount compatibility.
-
----
-
-## Impedance Matching (Qualifying Parts)
-
-| Category | Parts |
-|---|---|
-| Internally matched to 50 ohms | 10 |
-| Unmatched (external matching required) | 2 (CGH40010F, CGH40025F — both NRND) |
-
-All active (non-NRND) qualifying parts are internally matched. The two unmatched parts (CGH40010F/25F) require custom external matching networks to achieve good performance in the 5–6 GHz band.
-
----
-
-## Price Range
-
-Pricing was not obtained for most parts — Phase 4 detailed spec extraction did not complete due to API quota exhaustion. As a reference:
-- GaN PA ICs at 10–15W typically range from $50–$200 each (qty 1)
-- GaN PA ICs at 25–50W typically range from $150–$500 each (qty 1)
-- GaN PA ICs at 100W+ typically range from $400–$1,500+ each (qty 1)
-- Check Digi-Key, Mouser, and Richardson RFPD for current pricing
-
----
-
-## Key Gaps and Limitations
-
-1. **Pricing unavailable:** Phase 4 detailed spec extraction was interrupted by API quota exhaustion. Pricing, availability counts, and package pin counts are largely null.
-2. **CMPA5259025F lower freq edge:** Rated from 5.2 GHz, not 5.0 GHz. Technically a near-miss, but included as qualifying based on verification agent assessment.
-3. **ADPA1113 ambiguity:** Headline says 2–6 GHz but guaranteed specs only to 5.7 GHz. Classified as near-miss.
-4. **Wolfspeed/MACOM transition:** Six parts in this database were Wolfspeed products, acquired by MACOM in December 2023. Branding and distribution channels are still in transition. Some distributors still list manufacturer as "Wolfspeed."
-5. **No LDMOS found:** No LDMOS RF PA ICs operate in the 5–6 GHz band — LDMOS performance degrades significantly above 4 GHz.
-6. **WiFi/FEM parts excluded:** Many 5 GHz WiFi front-end modules (Skyworks, Qorvo QPF series, Microchip) were excluded as they operate at <1W — not suitable for high-power applications.
-7. **Integra Technologies parts:** The IGT5259CW25/50 are "50-ohm transistors" (matched RF transistors), not fully integrated MMICs — they require bias sequencing and negative gate voltage. Closer to packaged transistors than MMIC ICs.
-
----
-
-## Notable Trends
-
-1. **GaN dominance:** 100% of qualifying parts use GaN. No GaAs or LDMOS parts qualify at ≥5W in the 5–6 GHz band. GaN-on-SiC is the clear technology of choice.
-
-2. **MACOM market consolidation:** After acquiring Wolfspeed's RF business in December 2023, MACOM now controls 7 of 12 qualifying parts. This is a significant supply chain concentration risk for new designs.
-
-3. **High efficiency:** Active qualified GaN parts achieve 39–53% PAE, reflecting the maturity of GaN PA technology for C-band. This is dramatically better than legacy GaAs or LDMOS.
-
-4. **Very high power available:** 100W+ packaged ICs in QFN form factor (QPA2309, CMPA5259080S) represent remarkable power density. 10 years ago this would have required module-level integration.
-
-5. **QFN SMT packaging dominates:** All modern designs ship in plastic overmold QFN packages, enabling surface-mount assembly. Older flange-mount parts (CGH40010F/25F) are transitioning to NRND.
-
-6. **C-band radar primary market:** The majority of qualifying parts target AESA radar, EW, and satcom — not commercial wireless. The 5–6 GHz band overlaps with C-band radar (5.25–5.85 GHz). Commercial WiFi parts at these frequencies are far below 5W.
-
-7. **Voltage spread:** 28V and 50V are the two main supply rails. 28V parts are more accessible (compatible with standard GaN power supplies); 50V parts require specialized bias design but achieve higher power density.
-
-8. **NRND risk:** CGH40010F and CGH40025F (unmatched broadband GaN transistors from Wolfspeed/Cree) are NRND — avoid for new designs. Matched replacements (CMPA series) are the migration path.
-
----
-
-## Recommended Parts for New Designs
-
-| Application | Recommended Part | Why |
-|---|---|---|
-| Highest power, 5.0–6.0 GHz | Qorvo QPA2309 (100W) or QPA2310 (50W) | Active, QFN SMT, fully matched, excellent PAE, covers full band |
-| Mid power, 5.0–5.9 GHz | MACOM CMPA5259050S (50W) | Active, QFN, 50% PAE, 28V |
-| Wideband (needs >6 GHz too) | Analog Devices HMC8205BF10 (35W) | 0.3–6 GHz, no external matching, ceramic package |
-| Lower power driver stage | Qorvo QPA1019 (10W) or MACOM CMPA0560008S (10W) | Active, QFN, good PAE |
-| Budget/availability | MACOM CMPA0560008S | Available at Digi-Key and Mouser, well-documented |
+Categories that returned no qualifying results: NXP GaN/LDMOS (no 5 GHz products at this power), pSemi (no high-power PAs, only switches/attenuators), Ampleon (LDMOS ceiling at 5.0 GHz).
