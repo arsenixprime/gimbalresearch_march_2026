@@ -1,0 +1,37 @@
+RF Amplifier Research Error Log
+Generated: 2026-03-16
+
+[PHASE 4 - CRITICAL] Phase 4 detailed spec extraction aborted
+  Reason: API usage quota exhausted ("You're out of extra usage · resets 10pm America/New_York")
+  Impact: Pricing, exact package dimensions, pin counts, eval board part numbers, and operating temp ranges are null for most parts.
+  Affected batches: qorvo_batch1, qorvo_macom_batch2, macom_batch3, adi_macom_batch4, near_miss_batch1, near_miss_batch2
+  Files not written: rf_products/qorvo_batch1.json, rf_products/qorvo_macom_batch2.json, rf_products/macom_batch3.json, rf_products/adi_macom_batch4.json, rf_products/near_miss_batch1.json, rf_products/near_miss_batch2.json
+  Resolution: Database compiled from Phase 3 verification data. Re-run Phase 4 after quota resets.
+
+[PHASE 4 - INITIAL ATTEMPT] Phase 4 agents denied WebFetch access
+  Reason: User permission mode denied WebFetch for subagents in first Phase 4 launch attempt
+  Resolution: Re-launched agents with explicit WebFetch permission note. Still failed due to quota.
+
+[PHASE 2 - MINOR] RFHIC RRP5758065-40 identified as complete amplifier pallet (module)
+  Reason: Form factor is a complete board-level pallet with connectors, not a bare MMIC chip
+  Resolution: Excluded from qualifying and near-miss lists.
+
+[PHASE 2 - MINOR] ADI HMC8113 identified as 5U rack-mount chassis (not an IC)
+  Resolution: Excluded.
+
+[PHASE 2 - MINOR] ADI HMC7885 identified as hermetically sealed RF module with connectors (not bare IC)
+  Resolution: Excluded.
+
+[PHASE 2 - MINOR] ADI HMC902LP3E identified as LNA (low-noise amplifier), not a power amplifier
+  Resolution: Excluded.
+
+[PHASE 2 - MINOR] Qorvo QPA1019D identified as bare die variant (D suffix = die)
+  Resolution: Excluded in favor of packaged QPA1019.
+
+[PHASE 2 - MINOR] CMPA5259080S manufacturer attribution ambiguity
+  Note: Originally Wolfspeed, acquired by MACOM Dec 2023. DigiKey still lists as Wolfspeed. Product continues under MACOM.
+  Resolution: Listed as MACOM in database.
+
+[PHASE 2 - MINOR] MAAP-011027 status unknown
+  Note: Part announced 2013, still listed on MACOM product page but lifecycle status not explicitly confirmed.
+  Resolution: Listed as status=unknown in database.

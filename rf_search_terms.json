@@ -1,0 +1,60 @@
+{
+  "general_discovery": [
+    "5 GHz GaN power amplifier IC",
+    "5.8 GHz RF power amplifier chip",
+    "5-6 GHz PA IC 10W",
+    "5W 10W 15W 5GHz amplifier IC",
+    "5 GHz high power amplifier SMD",
+    "5 GHz PA with integrated matching",
+    "5-6 GHz power amplifier module",
+    "6 GHz RF power amplifier IC",
+    "5.8 GHz power amplifier datasheet",
+    "5 GHz RF PA chip SMD package",
+    "5-6 GHz amplifier IC QFN",
+    "5 GHz power amplifier IC buy"
+  ],
+  "manufacturer_targeted": [
+    "Qorvo 5 GHz power amplifier",
+    "MACOM 5 GHz GaN amplifier",
+    "Wolfspeed 5 GHz GaN PA",
+    "Analog Devices 5 GHz power amplifier",
+    "NXP 5 GHz LDMOS amplifier",
+    "Renesas 5 GHz power amplifier",
+    "Skyworks 5 GHz PA IC",
+    "pSemi 5 GHz amplifier",
+    "Guerrilla RF 5 GHz power amplifier",
+    "Ampleon 5 GHz LDMOS amplifier",
+    "Microchip Microsemi 5 GHz PA",
+    "Cree 5 GHz GaN power amplifier IC",
+    "Qorvo QPB9325 5 GHz amplifier",
+    "MACOM MAGX 5 GHz GaN PA",
+    "Skyworks SKY65718 5 GHz amplifier"
+  ],
+  "application_targeted": [
+    "5 GHz WiFi power amplifier IC",
+    "802.11ac 802.11ax power amplifier FEM",
+    "5 GHz drone video transmitter amplifier IC",
+    "5.8 GHz FPV power amplifier chip",
+    "UNII-1 UNII-2 UNII-3 power amplifier IC",
+    "C-band power amplifier monolithic",
+    "C-band GaN MMIC power amplifier",
+    "5 GHz point-to-point link power amplifier",
+    "5 GHz radar power amplifier IC",
+    "5.8 GHz ISM band amplifier IC",
+    "5 GHz WLAN front end module PA",
+    "5 GHz fixed wireless access amplifier IC"
+  ],
+  "technology_targeted": [
+    "5 GHz GaN MMIC 10W datasheet",
+    "GaN HEMT 5 GHz packaged amplifier",
+    "5 GHz LDMOS power amplifier",
+    "GaAs 5 GHz power amplifier MMIC",
+    "5 GHz GaN PA QFN package",
+    "5 GHz GaN on SiC power amplifier",
+    "5 GHz GaAs pHEMT amplifier IC",
+    "MMIC 5-6 GHz power amplifier bare die",
+    "5 GHz GaN PA high efficiency",
+    "5 GHz MMIC amplifier plastic package",
+    "5 GHz GaN PA 28V supply"
+  ]
+}

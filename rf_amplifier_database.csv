@@ -1,0 +1,25 @@
+manufacturer,part_number,status,technology,frequency_range_ghz,output_power_w,output_power_dbm,output_power_spec,gain_db,gain_type,drain_voltage_v,efficiency_pct,efficiency_type,impedance_matched,package_type,package_size_mm,price_usd,datasheet_url,product_url,meets_criteria,near_miss,near_miss_reason
+Qorvo,TGA2307-SM,active,GaN,5.0-6.0,50,47,Psat,20,large_signal,,44,PAE,true,QFN 6x6mm plastic overmold,6x6,,,https://www.qorvo.com/products/p/TGA2307-SM,true,false,
+Qorvo,QPA2309,active,GaN,5.0-6.0,100,50,Psat,22,large_signal,50,52,PAE,true,QFN 7x7mm,7x7x0.82,,,https://www.qorvo.com/products/p/QPA2309,true,false,
+Qorvo,QPA2310,active,GaN,5.0-6.0,50,47,Psat,23,large_signal,50,53,PAE,true,QFN 7x7mm,7x7x0.82,,,https://www.qorvo.com/products/p/QPA2310,true,false,
+Qorvo,QPA1019,active,GaN,4.5-7.0,10,40,Psat,19,large_signal,22,39,PAE,true,QFN plastic overmold,,,,https://www.qorvo.com/products/p/QPA1019,true,false,
+MACOM,CMPA0560008S,active,GaN,0.5-6.0,10,40,Psat,12,large_signal,28,40,PAE,true,QFN 5x5mm plastic overmold,5x5,,https://cdn.macom.com/datasheets/CMPA0560008S.pdf,https://www.macom.com/products/product-detail/CMPA0560008,true,false,
+MACOM,CMPA5259080S,active,GaN,5.0-5.9,110,50.4,Psat,29,small_signal,40,48,PAE,true,QFN 5x5mm,5x5,,https://assets.wolfspeed.com/uploads/2021/05/CMPA5259080S.pdf,https://www.macom.com/products/product-detail/CMPA5259080,true,false,
+MACOM,CMPA2560025,active,GaN,2.5-6.0,25,44,Psat,25,small_signal,28,30,PAE,true,,,,,https://www.macom.com/products/product-detail/CMPA2560025,true,false,
+MACOM,CMPA5259050S,active,GaN,5.0-5.9,50,47,Psat,27,large_signal,28,50,PAE,true,QFN 5x5mm,5x5,,https://assets.wolfspeed.com/uploads/2022/11/wolfspeed_cmpa5259050s_data_sheet.pdf,,true,false,
+MACOM,CMPA5259025F,active,GaN,5.2-5.9,25,44,Psat,,,,50,drain,true,Flange (type 440219),,,,,,true,false,
+Analog Devices,HMC8205BF10,active,GaN,0.3-6.0,35,45.5,Psat,20,large_signal,50,38,PAE,true,LDCC 10-lead ceramic,,,,https://www.analog.com/en/products/hmc8205.html,true,false,
+MACOM,CGH40010F,NRND,GaN,DC-6.0,13,41,Psat,16,small_signal,28,65,drain,false,Flange (type 440166),,,https://assets.wolfspeed.com/uploads/2020/12/CGH40010.pdf,,true,false,
+MACOM,CGH40025F,NRND,GaN,DC-6.0,30,45,Psat,15,small_signal,28,62,drain,false,Flange (type 440166),,,https://assets.wolfspeed.com/uploads/2020/12/CGH40025F.pdf,,true,false,
+Qorvo,QPA0506,active,GaN,5.0-6.0,4,36,Psat,18,large_signal,,53,PAE,true,QFN 4x4mm plastic overmold,4x4,,,https://www.qorvo.com/products/p/QPA0506,false,true,Output power 4W (~1 dB short of 5W threshold)
+Qorvo,QPA2308D,obsolete,GaN,5.0-6.0,60,47.8,Psat,21,large_signal,,43,PAE,true,Bare die,,,,https://www.qorvo.com/products/p/QPA2308D,false,true,Discontinued; bare die form factor
+Qorvo,QPA2576N,obsolete,GaN,2.5-6.0,40,46,Psat,29,small_signal,,36,PAE,,CuW flanged,,,,https://www.qorvo.com/products/p/QPA2576N,false,true,Discontinued/obsolete
+MACOM,MAAP-011027,unknown,GaAs,5.2-5.9,8,39,Psat,,,,,37,PAE,true,PQFN 5x5mm 20-lead,5x5,,https://cdn.macom.com/datasheets/MAAP-011027.pdf,https://www.macom.com/products/product-detail/MAAP-011027,false,true,Frequency range 5.2-5.9 GHz misses 5.0-5.2 GHz lower edge
+MACOM,MAGX-011086A,active,GaN,DC-6.0,4,36,Psat,11,large_signal,28,,,,,4x4,,,https://www.macom.com/products/product-detail/MAGX-011086A,false,true,Output power 4W below 5W threshold
+Analog Devices,ADPA1113,active,GaN,2.3-5.7,44.7,46.5,Psat,40.5,small_signal,28,39,PAE,true,LDCC 14-lead ceramic,,,,,false,true,Guaranteed spec range ends at 5.7 GHz (misses 5.8 GHz)
+Analog Devices,HMC7357LP5GE,active,GaAs,5.5-8.5,3.16,35,Psat,29,small_signal,8,34,PAE,true,QFN 5x5mm 24-lead,5x5,,,https://www.analog.com/en/products/hmc7357.html,false,true,Output power 3.16W below 5W; frequency starts at 5.5 GHz
+United Monolithic Semiconductors (UMS),CHA7060-QAB,active,GaN,5.6-8.5,12,41,Psat,30,large_signal,,40,PAE,true,QFN 6x6mm SMT,6x6,,,https://www.ums-rf.com/product/cha7060-qab-5-6-8-5ghz-power-amplifier/,false,true,Frequency range starts at 5.6 GHz missing 5.0-5.6 GHz
+Guerrilla RF,GRF5857,active,GaN,5.2-6.0,3.16,35,Psat,,,,,50,PAE,true,,,,,https://www.guerrilla-rf.com/products/detail/sku/GRF5857,false,true,Output power ~3W below 5W; frequency starts at 5.2 GHz
+Millibeam,HPSB5Q,active,GaN,3.0-5.5,5,37,Psat,37,large_signal,,,,true,QFN 4x5mm,4x5,,,https://www.millibeam.com/product-variation/hpsb5q,false,true,Upper frequency limit 5.5 GHz misses 5.5-5.8 GHz
+Integra Technologies,IGT5259CW50,active,GaN,5.2-5.9,50,47,Psat,,,36,,,true,Metal ceramic,,,,,false,true,Frequency range 5.2-5.9 GHz misses 5.0-5.2 GHz lower portion
+Integra Technologies,IGT5259CW25,active,GaN,5.2-5.9,25,44,Psat,12,large_signal,36,48,drain,true,Metal ceramic,,,,,,false,true,Frequency range 5.2-5.9 GHz misses 5.0-5.2 GHz lower portion
