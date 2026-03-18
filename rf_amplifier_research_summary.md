@@ -109,6 +109,38 @@ The 5–15W tier at 5–6 GHz is thin because:
 
 ---
 
+## IMS 2026 Vendor Search (Supplemental)
+
+19 additional vendors from the IMS 2026 exhibitor list were searched. **No new qualifying parts found.** Key findings:
+
+| Company | Result |
+|---|---|
+| RFHIC Corp | H004 (DC–6 GHz, 28W, DFN SMD) is closest — over power cap. Announced C-band QFN MMICs exist but no catalog <15W parts. |
+| Filtronic | 5–6+ GHz products are high-power modules (>50W), not standalone IC chips |
+| Altum RF | Catalog starts at X-band (8 GHz); no sub-6 GHz products |
+| Integra Technologies | IGT5259CW25 (5.2–5.9 GHz, 25W, flanged) is closest — over power cap. All their 5 GHz parts are >15W radar transistors. |
+| MaXentric Technologies | R&D/systems company; no catalog GaN MMIC ICs sold |
+| TagoreTech | Portfolio tops out at ~4 GHz |
+| Diramics | LNA transistors only — not a power amplifier company |
+| Polyfet RF Devices | Maximum frequency 3 GHz |
+| CPC Amps | Makes complete rack/bench amplifier systems, not IC chips |
+| Soctera | Pre-commercial startup, no catalog parts |
+| Finwave Semiconductor | FW8001 (4W) and FW8002 (8W) cover 3.1–4.1 GHz in 5×5mm QFN — **new near-misses**, frequency falls short of 5 GHz |
+| Oso Semiconductor | mmWave beamformer chipsets; no 5–6 GHz PA ICs |
+| Otava RF | mmWave beamformer and filter ICs; no 5–6 GHz PA products |
+| GCS | Pure-play foundry; no catalog ICs sold |
+| WIN Semiconductors | Pure-play foundry; no catalog ICs sold |
+| Tower Semiconductor | Pure-play foundry; no catalog ICs sold |
+| Nxbeam Inc. | All products >12 GHz (Ka/V/E-band) |
+| CML Micro | Gap between sub-GHz and Ka-band; nothing at 5–6 GHz |
+| WAVEPIA Co., Ltd. | WP285P5020UH(S) (5–6 GHz, ~25.7W, flanged) is exact frequency target but over 15W cap. MMIC PAs at 5–6 GHz are bare die only. |
+
+The IMS search further confirms the market gap: **the 5–15W range at 5–6 GHz is genuinely underserved.** Packaged GaN transistors from RFHIC, WAVEPIA, and Integra cluster at 25–80W for C-band radar. The only movement toward sub-15W is in foundries' process nodes (WIN NP45-11, Tower GaN) — suggesting future products may emerge as infrastructure customers tape out lower-power designs.
+
+**Finwave FW8002** (8W, 3.1–4.1 GHz, QFN) is the most promising "watch" part — if Finwave extends their FinFET PA to a 5 GHz variant, it would likely qualify.
+
+---
+
 ## Search Coverage
 
 50 search terms were used across 4 categories: general discovery, manufacturer-targeted (MACOM, Qorvo, ADI, Skyworks, pSemi, NXP, Ampleon, Guerrilla RF, Mini-Circuits, UMS, Millibeam), application-targeted (WiFi AP, FWA, FPV/drone, backhaul, ISM), and technology-targeted (GaN 5W/10W, GaAs 5 GHz, 5.8 GHz ISM). The search deliberately avoided C-band radar, AESA, and defense terminology to stay in the commercial tier.

@@ -248,5 +248,33 @@
     "near_miss": true,
     "near_miss_reason": "Output power 3.16W below 5W; frequency starts at 5.5 GHz",
     "url": "https://www.analog.com/en/products/hmc7357.html"
+  },
+  {
+    "manufacturer": "Finwave Semiconductor",
+    "part_number": "FW8001",
+    "status": "active",
+    "frequency_range_ghz": "3.1-4.1",
+    "output_power_w": 4,
+    "output_power_dbm": 36,
+    "output_power_spec": "Plinear",
+    "meets_criteria": false,
+    "near_miss": true,
+    "near_miss_reason": "Frequency tops at 4.1 GHz, does not reach 5 GHz band; power also slightly under 5W threshold",
+    "url": "https://finwavesemi.com/power-amplifier/",
+    "notes": "GaN-on-Si FinFET, 5x5mm QFN. No DPD required. 5G n77/n78/n48 bands. Distributed by RFMW. Source: IMS 2026 vendor search."
+  },
+  {
+    "manufacturer": "Finwave Semiconductor",
+    "part_number": "FW8002",
+    "status": "active",
+    "frequency_range_ghz": "3.1-4.1",
+    "output_power_w": 8,
+    "output_power_dbm": 39,
+    "output_power_spec": "Plinear",
+    "meets_criteria": false,
+    "near_miss": true,
+    "near_miss_reason": "Frequency tops at 4.1 GHz, does not reach 5 GHz band",
+    "url": "https://finwavesemi.com/power-amplifier/",
+    "notes": "GaN-on-Si FinFET, 5x5mm QFN. 8W linear, no DPD. 5G sub-6 GHz. Distributed by RFMW. Source: IMS 2026 vendor search."
   }
 ]

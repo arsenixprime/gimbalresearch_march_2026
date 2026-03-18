@@ -3,7 +3,7 @@
 These parts come close to meeting the criteria (5.0–5.8 GHz coverage AND 5W–15W output power AND packaged IC) but fall short on one or two dimensions.
 
 **Generated:** 2026-03-16
-**Total near-miss parts:** 12
+**Total near-miss parts:** 14 (12 original + 2 from IMS 2026 vendor search)
 
 ---
 
@@ -35,6 +35,17 @@ These parts come close to meeting the criteria (5.0–5.8 GHz coverage AND 5W–
 | Qorvo | [QPA0506](https://www.qorvo.com/products/p/QPA0506) | 5.0–6.0 | 4W (36 dBm) | Psat | GaN | QFN 4×4mm | 4W — ~1 dB under 5W threshold; exact 5–6 GHz coverage otherwise perfect | [Link](https://www.qorvo.com/products/p/QPA0506) |
 | Skyworks Solutions | [SKY66288-11](https://www.skyworksinc.com/en/Products/Amplifiers/SKY66288-11) | 5.15–5.925 | 4W (36 dBm) | Psat | GaAs | QFN 5×5mm 16-lead | 4W AND NRND AND misses 5.0–5.15 GHz | [Link](https://www.skyworksinc.com/en/Products/Amplifiers/SKY66288-11) |
 | MACOM | [CMPA0060002F](https://www.digikey.com/en/product-highlight/c/cree-wolfspeed/cmpa0060002f-power-amplifier) | 0.02–6.0 | 2W (33 dBm) | Psat | GaN | Flange | 2W — well under 5W; good freq coverage otherwise | [Link](https://www.digikey.com/en/product-highlight/c/cree-wolfspeed/cmpa0060002f-power-amplifier) |
+
+---
+
+### Added from IMS 2026 Vendor Search — Frequency Too Low
+
+| Manufacturer | Part Number | Freq Range (GHz) | Power | Spec | Technology | Package | Miss Reason | URL |
+|---|---|---|---|---|---|---|---|---|
+| Finwave Semiconductor | [FW8001](https://finwavesemi.com/power-amplifier/) | 3.1–4.1 | 4W (36 dBm) | Plinear | GaN-on-Si FinFET | QFN 5×5mm | Tops at 4.1 GHz; does not reach 5 GHz; also under 5W | [Link](https://finwavesemi.com/power-amplifier/) |
+| Finwave Semiconductor | [FW8002](https://finwavesemi.com/power-amplifier/) | 3.1–4.1 | 8W (39 dBm) | Plinear | GaN-on-Si FinFET | QFN 5×5mm | Tops at 4.1 GHz; does not reach 5 GHz | [Link](https://finwavesemi.com/power-amplifier/) |
+
+**Note — Over-Power-Cap parts found (>15W, excluded from near-miss list):** The IMS search also identified several C-band packaged GaN transistors that cover 5–6 GHz but exceed the 15W cap: WAVEPIA WP285P5020UH(S) (5–6 GHz, ~25.7W, flanged), Integra IGT5259CW25 (5.2–5.9 GHz, 25W, flanged ceramic), and RFHIC H004 (DC–6 GHz, 28W, DFN SMD). These confirm the market gap: the 5–15W range at 5–6 GHz is underserved between consumer WiFi FEMs and C-band radar transistors.
 
 ---
 

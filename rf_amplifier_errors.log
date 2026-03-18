@@ -39,6 +39,13 @@ Re-run completed: 2026-03-16 (corrected 5-15W constraint, infrastructure market 
   Note: Part announced 2013, still listed on MACOM product page but lifecycle status not explicitly confirmed.
   Resolution: Listed as status=unknown in database.
 
+[IMS 2026 VENDOR SEARCH] 19 additional vendors researched from IMS 2026 exhibitor list
+  Date: 2026-03-17
+  Result: No new qualifying parts found. Two Finwave Semiconductor parts added as near-misses (FW8001 4W, FW8002 8W — correct package/power but tops at 4.1 GHz, does not reach 5 GHz).
+  Notable over-power-cap finds (>15W excluded): RFHIC H004 (DC-6GHz, 28W DFN), Integra IGT5259CW25 (5.2-5.9GHz, 25W flanged), WAVEPIA WP285P5020UH(S) (5-6GHz, ~25.7W flanged).
+  Vendors with no 5-6GHz PA products: Altum RF, CML Micro, CPC Amps, Diramics, GCS, MaXentric, Nxbeam, Oso Semiconductor, Otava RF, Polyfet, Soctera, TagoreTech, Tower Semiconductor, WIN Semiconductors.
+  RFHIC announced C-band QFN MMICs — no catalog parts <15W confirmed; direct inquiry recommended.
+
 === FIRST RUN (prior — dominated by 25-110W radar parts, results superseded) ===
 
 [FIRST RUN - CRITICAL] Power range constraint not enforced — first run returned 25-110W C-band radar GaN MMICs
